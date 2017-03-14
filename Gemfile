@@ -38,6 +38,7 @@ gem 'jbuilder', '~> 2.5'
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
 end
 
 group :development, :test do
