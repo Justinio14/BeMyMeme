@@ -1,0 +1,17 @@
+<html>
+
+<% if user_signed_in? %>
+  <% @user.each do |user| %>
+    <% unless user.id == current_user.id %>
+      <div class="user">
+        <%= user.username %><br />
+        <%= user.gender %><br />
+        <%= user.location %><br/>
+          <br />
+        </div>
+    </br/>
+    <% end %>
+  <% end %>
+<% end %>
+
+</html>

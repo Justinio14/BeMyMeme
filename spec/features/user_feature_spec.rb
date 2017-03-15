@@ -21,7 +21,7 @@ feature "User can sign in and out" do
       fill_in('Email', with: 'test@example.com')
       fill_in('Password', with: 'testtest')
       fill_in('Password confirmation', with: 'testtest')
-      fill_in('user_username', with: 'test')
+      fill_in('user_username', with: 'Leslie')
       fill_in('Dob', with: '24/01/1994')
       click_button('Sign up')
     end
