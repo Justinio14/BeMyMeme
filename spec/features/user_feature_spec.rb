@@ -26,15 +26,21 @@ feature "User can sign in and out" do
       click_button('Sign up')
     end
 
-    xit "should see 'sign out' link" do
+    it "should see 'sign out' link" do
       visit('/')
       expect(page).to have_link('Sign out')
     end
 
-    xit "should not see a 'sign in' link and a 'sign up' link" do
+    it "should not see a 'sign in' link and a 'sign up' link" do
       visit('/')
       expect(page).not_to have_link('Sign in')
       expect(page).not_to have_link('Sign up')
+    end
+
+    it "should add be able to sign out" do
+      visit '/'
+      click_link('Sign out')
+      expect(page).not_to have_link('Sign out')
     end
   end
 end
