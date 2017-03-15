@@ -9,7 +9,7 @@ class ChatsController < ApplicationController
   end
 
   def create
-    @chat = current_user.chat.build(chat_params)
+    @chat = current_user.chats.build(chat_params)
     if @chat.save
       flash[:success] = 'Chat room added!'
       redirect_to chat_path
@@ -17,6 +17,11 @@ class ChatsController < ApplicationController
       render 'new'
     end
   end
+
+  def show
+    @chat = Chat.includes(:messages).find_by(id: params[:id])
+  end
+
 
   private
 
