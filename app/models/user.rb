@@ -8,3 +8,7 @@ class User < ApplicationRecord
   has_many :blocks
   has_many :messages, dependent: :destroy
 end
+
+def name
+  :username
+end
