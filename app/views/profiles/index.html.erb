@@ -4,6 +4,7 @@
   <% @user.each do |user| %>
     <% unless user.id == current_user.id %>
       <div class="user">
+        <%= image_tag user.image.url(:thumb) %><br />
         <%= user.username %><br />
         <%= user.gender %><br />
         <%= user.location %><br/>
