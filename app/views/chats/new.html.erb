@@ -1,0 +1,10 @@
+<h1><%= "#{@chat.chat_recipient}" %></h1>
+
+<%= form_for @chat do |f| %>
+  <div class="form-group">
+    <%= f.label :chat_recipient %>
+    <%= f.text_field :chat_recipient, autofocus: true, class: 'form-control' %>
+  </div>
+
+  <%= f.submit "Enter", class: 'btn btn-primary' %>
+<% end %>
