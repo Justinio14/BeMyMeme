@@ -6,7 +6,10 @@ Rails.application.routes.draw do
 
   resources :profiles, :memes
   resources :api, only: [:index]
-  resources :chats, only: [:new, :create, :show, :index]
+
+  resources :chats do
+    resources :messages
+  end
 
   root to: "profiles#index"
 

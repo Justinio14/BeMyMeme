@@ -3,12 +3,13 @@ class ChatsController < ApplicationController
   layout false
 
   def index
+    @user = User.all
     @chat = Chat.all
+    p @user
   end
 
 
-  def new
-  end
+  
 
   def create
     if Chat.between(params[:chat_initiator],params[:chat_recipient]).present?
@@ -22,7 +23,7 @@ class ChatsController < ApplicationController
 
 
   def show
-    @chat = Chat.find(params[:id])
+    @conversation = Chat.find(params[:id])
     @reciever = interlocutor(@chat)
     @messages = @chat.messages
     @message = Message.new

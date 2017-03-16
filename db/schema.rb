@@ -28,9 +28,7 @@ ActiveRecord::Schema.define(version: 20170315200527) do
     t.integer  "chat_recipient"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-    t.integer  "chat_id"
     t.integer  "user_id"
-    t.index ["chat_id"], name: "index_chats_on_chat_id", using: :btree
     t.index ["user_id"], name: "index_chats_on_user_id", using: :btree
   end
 
@@ -39,9 +37,7 @@ ActiveRecord::Schema.define(version: 20170315200527) do
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "meme_id"
     t.integer  "user_id"
-    t.index ["meme_id"], name: "index_memes_on_meme_id", using: :btree
     t.index ["user_id"], name: "index_memes_on_user_id", using: :btree
   end
 
@@ -90,9 +86,7 @@ ActiveRecord::Schema.define(version: 20170315200527) do
   end
 
   add_foreign_key "blocks", "users"
-  add_foreign_key "chats", "chats"
   add_foreign_key "chats", "users"
-  add_foreign_key "memes", "memes"
   add_foreign_key "memes", "users"
   add_foreign_key "messages", "chats"
   add_foreign_key "messages", "users"
