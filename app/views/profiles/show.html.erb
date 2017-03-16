@@ -32,20 +32,20 @@
 
 
 <body>
-
 <div class="header">
      <div class="header-top">
 		<div class="wrap">
 	           <div class="logo">
 			     <h1><a href="index.html">Be My Meme</a></h1>
 		 	  </div>
+
 		 	  <div class="menu">
 			   		<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li class=""><a href="about.html">Edit</a></li>
 						<li class=""><a href="services.html">Sign Out</a></li>
-						<!-- <li class=""><a href="gallery.html">Report User</a></li>
-						<li class=""><a href="contact.html">Block User</a></li> -->
+						<li class=""><a href="gallery.html">Report User</a></li>
+						<li class=""><a href="contact.html">Block User</a></li>
 					</ul>
 					<div class="clear"></div>
 	   		  	</div>
@@ -53,13 +53,17 @@
 	    </div>
 	</div>
 
+
+
 	<div class="header-bottom">
 		<div class="wrap">
+      
 		    <div class="section group example">
 				<div class="col_1_of_header span_1_of_header">
 				   <img src="images/banner1.jpg" alt=""/>
  				</div>
 				<div class="col_1_of_header span_1_of_header">
+           <h3><%= user.username %></h3><br/>
 				   <h3>About Me</h3>
 				   <p>A juggling trapeze artist seeking similar</p>
 				   <button class="btn1 btn-1 btn-1a">Read More</button>
@@ -69,71 +73,6 @@
 		 </div>
 	</div>
 </div>
-
-
-<!--
-<div class="main">
- 	<div class="top-box">
-	  <div class="wrap">
-		 <div class="content-top">
-			<div class="section group">
-				<div class="col_1_of_3 span_1_of_3">
-					<div class="grid_4 alpha vline">
-							<h3>Lorem ipsum dolor </h3>
-							<div class="thumb-pad1 tp1">
-					           <div class="thumbnail clearfix">
-				                <figure>
-									<img src="images/pic.jpg" alt=""/><em></em>
-				                </figure>
-					          </div>
-			       			 </div>
-			       		 <div class="clear"></div>
-				         <div class="more1">
-				          	<a href="#" class="more_btn">view more</a>
-				        </div>
-					</div>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<div class="grid_4 alpha vline">
-							<h3>Lorem ipsum dolor </h3>
-							<div class="thumb-pad1 tp1">
-					           <div class="thumbnail clearfix">
-				                <figure>
-									<img src="images/pic1.jpg" alt=""/><em></em>
-				                </figure>
-					          </div>
-			       			 </div>
-			       		 <div class="clear"></div>
-				         <div class="more1">
-				          	<a href="#" class="more_btn">view more</a>
-				        </div>
-					</div>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<div class="grid_4 alpha vline">
-							<h3>Lorem ipsum dolor </h3>
-							<div class="thumb-pad1 tp1">
-			          <div class="thumbnail clearfix">
-		                 <figure>
-								 	<img src="images/pic2.jpg" alt=""/><em></em>
-		                	  </figure>
-			          </div>
-			        </div>
-			        <div class="clear"></div>
-			         <div class="more1">
-			          <a href="#" class="more_btn">view more</a>
-			        </div>
-				</div>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	   </div>
-	</div>
-	<div class="content-middle">
-		<div class="wrap">
- -->
-
 
 
 
@@ -308,24 +247,6 @@
       </div>
   </div>
 </section>
-
-<!--
-
-<% if user_signed_in? %>
-  <% @user.each do |user| %>
-    <% unless user.id == current_user.id %>
-      <div class="user">
-        <%= image_tag user.image.url(:thumb) %><br />
-        <%= user.username %><br />
-        <%= user.gender %><br />
-        <%= user.location %><br/>
-          <br />
-        </div>
-    </br/>
-    <% end %>
-  <% end %>
-<% end %> -->
-
 
 </body>
 </html>
