@@ -1,29 +1,31 @@
 class ChatsController < ApplicationController
 
+  layout false
+
   def index
     @chat = Chat.all
   end
 
 
   def new
-    @chat = Chat.new
   end
 
   def create
-
-    @chat = current_user.chats.build(chat_params)
-
-    if @chat.save
-      flash[:success] = 'Chat room added!'
-      redirect_to chat_path
+    if Chat.between(params[:chat_initiator],params[:chat_recipient]).present?
+      @chat = Chat.between(params[:chat_initiator],params[:chat_recipient]).first
     else
-      render 'new'
+      @chat = Chat.create!(chat_params)
     end
+
+    render json: {chat_id: @chat.id }
   end
 
 
   def show
-    @chat = Chat.includes(:messages).find_by(id: params[:id])
+    @chat = Chat.find(params[:id])
+    @reciever = interlocutor(@chat)
+    @messages = @chat.messages
+    @message = Message.new
   end
 
 
@@ -34,6 +36,8 @@ class ChatsController < ApplicationController
     params.require(:chat).permit(:chat_recipient, :chat_initiator)
   end
 
-
+  def interlocutor(chat)
+    current_user == chat.chat_recipient ? chat.chat_initiator : chat.chat_recipient
+  end
 
 end
