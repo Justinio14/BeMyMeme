@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, :controllers => {registrations: 'registrations'}
-  get "memes/meme_gallery" => 'project#meme_gallery', :as => :meme_gallery
+  get "memes/meme_gallery" => 'memes#meme_gallery', :as => :meme_gallery
   resources :profiles, :memes
   resources :api, only: [:index]
   root to: "profiles#index"
