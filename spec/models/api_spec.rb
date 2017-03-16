@@ -1,9 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe ApiController, :type => :controller do
+RSpec.describe API do
   context 'API return successfully' do
     it 'should return an json object' do
-      expect(response).to have_http_status(:success)
+      api = API.new
+      expect(api.refresh).to include("dataasdfasdf af")
     end
   end
 end
