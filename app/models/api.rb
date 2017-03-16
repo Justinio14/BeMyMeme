@@ -1,6 +1,7 @@
 require 'net/http'
 require 'net/https'
 require 'json'
+require 'meme'
 
 class API
   def refresh
@@ -13,8 +14,11 @@ class API
     http.use_ssl = true
     response = http.request(request)
     hash=JSON.parse(response.body)
-    hash["data"].each do |x| 
-        p x["id"]
+    hash["data"].each do |x|
+        Meme.where(name: x["link"], tag: x["title"]).first_or_create do |meme|
+          meme.name = x["link"]
+          meme.tag = x["title"]
+        end
     end
   end
 
