@@ -11,7 +11,7 @@ class ChatsController < ApplicationController
 
   def create
 
-    @chat = current_user.chat.build(chat_params)
+    @chat = current_user.chats.build(chat_params)
 
     if @chat.save
       flash[:success] = 'Chat room added!'

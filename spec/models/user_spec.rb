@@ -5,6 +5,7 @@ RSpec.describe User, type: :model do
    it { should have_many(:memes) }
    it { should have_many(:blocks) }
 
+
    it { should validate_attachment_content_type(:image).
                allowing('image/png', 'image/gif').
                rejecting('text/plain', 'text/xml') }
@@ -12,5 +13,6 @@ RSpec.describe User, type: :model do
                             less_than(1.megabytes) }
 
    it { should have_many(:messages) }
+
 
 end
