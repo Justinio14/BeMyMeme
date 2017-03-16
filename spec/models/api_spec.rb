@@ -9,8 +9,7 @@ RSpec.describe API do
   # end
 
     it 'should add a new meme to the library' do
-      api = API.new
-      api.refresh
+      API.refresh
       expect(Meme.all.length).to_not eq 0
     end
   end

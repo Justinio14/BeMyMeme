@@ -4,7 +4,7 @@ require 'json'
 require 'meme'
 
 class API
-  def refresh
+  def self.refresh
     #headers['Access-Control-Allow-Origin'] = '*'
     headers = {"Authorization" => "Client-ID " + ENV['CLIENT_ID']}
     path = "/3/gallery/r/memes"
@@ -15,11 +15,10 @@ class API
     response = http.request(request)
     hash=JSON.parse(response.body)
     hash["data"].each do |x|
-        Meme.where(name: x["link"], tag: x["title"]).first_or_create do |meme|
-          meme.name = x["link"]
-          meme.tag = x["title"]
-        end
+      Meme.where(name: x["link"], tag: x["title"]).first_or_create do |meme|
+        meme.name = x["link"]
+        meme.tag = x["title"]
+      end
     end
   end
-
 end
