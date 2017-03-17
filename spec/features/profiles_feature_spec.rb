@@ -59,7 +59,7 @@ feature 'profiles' do
       expect(page).to have_content('Edit')
   end
 
-      xit "should take user to a user profile when they click a user Profile" do
+      xit "User can see another user profile when they click a Profile link" do
         visit '/profiles'
         click_link 'test1'
         expect(page).to have_content 'test1'
