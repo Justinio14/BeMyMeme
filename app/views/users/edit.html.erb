@@ -1,0 +1,13 @@
+<h3>Edit your profile:</h3><br><br>
+<%= form_for  @user do |f| %>
+
+<%= f.label :bio %>
+<%= f.text_area :bio %><br><br>
+<%= f.label :location %>
+<%= f.text_field :location %><br><br>
+<%= f.label :postcode %>
+<%= f.text_field :postcode %><br><br>
+<%= f.label :interested_in %>
+<%= f.text_field :interested_in %><br><br>
+<%= f.submit %>
+<% end %>

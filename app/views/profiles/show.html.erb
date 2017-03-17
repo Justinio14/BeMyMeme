@@ -19,14 +19,14 @@
 		});
 	</script>
 <!--light box-->
-<script src="js/superfish.js"></script>
+<!-- <script src="js/superfish.js"></script>
 <script type="text/javascript" src="js/jquery.lightbox.js"></script>
 <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
 	<script type="text/javascript">
 		$(function() {
 			$('.gallery a').lightBox();
 		});
-   </script>
+   </script> -->
 </head>
 
 
@@ -36,16 +36,17 @@
      <div class="header-top">
 		<div class="wrap">
 	           <div class="logo">
-			     <h1><a href="index.html">Be My Meme</a></h1>
+			     <h1><%= link_to "Be My Meme", root_path %></h1>
 		 	  </div>
 
-		 	  <div class="menu">
+				<div class="menu">
 			   		<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li class=""><a href="about.html">Edit</a></li>
-						<li class=""><a href="services.html">Sign Out</a></li>
-						<li class=""><a href="gallery.html">Report User</a></li>
-						<li class=""><a href="contact.html">Block User</a></li>
+						<li class="active"><%= link_to 'Home', root_path %></li>
+						<li class=""><%= link_to 'Edit', edit_user_path %></li>
+						<li class=""><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+						<li class=""><%= link_to 'Delete Account', user_path, method: :delete %></li>
+						<!-- <li class=""><a href="gallery.html">Report User</a></li>
+						<li class=""><a href="contact.html">Block User</a></li> -->
 					</ul>
 					<div class="clear"></div>
 	   		  	</div>
@@ -57,16 +58,16 @@
 
 	<div class="header-bottom">
 		<div class="wrap">
-      
+
 		    <div class="section group example">
 				<div class="col_1_of_header span_1_of_header">
 				   <img src="images/banner1.jpg" alt=""/>
  				</div>
 				<div class="col_1_of_header span_1_of_header">
-           <h3><%= user.username %></h3><br/>
+           <h3><%= current_user.username %></h3><br/>
+
 				   <h3>About Me</h3>
-				   <p>A juggling trapeze artist seeking similar</p>
-				   <button class="btn1 btn-1 btn-1a">Read More</button>
+				   <p><%= current_user.bio %></p>
 				</div>
 				<div class="clear"></div>
 		    </div>
@@ -132,33 +133,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">
-						<div class="gallery">
-						<a href="images/t-pic8.jpg" class="flipLightBox-4">
-							<img src="images/pic8.jpg" alt="Image 2" style="top: 0px;">
-						</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">
-						<div class="gallery">
-						<a href="images/t-pic9.jpg" class="flipLightBox-4">
-							<img src="images/pic9.jpg" alt="Image 2" style="top: 0px;">
-						</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio logo1 mix_all" data-cat="logo">
-					<div class="portfolio-wrapper">
-						<div class="gallery">
-						<a href="images/t-pic10.jpg" class="flipLightBox-4">
-							<img src="images/pic10.jpg" alt="Image 2" style="top: 0px;">
-						</a>
-						</div>
-					</div>
-				</div>
 		</div>
   </section>
 
@@ -214,33 +188,6 @@
           <div class="gallery">
           <a href="images/t-pic7.jpg" class="flipLightBox-4">
             <img src="images/pic7.jpg" alt="Image 2" style="top: 0px;">
-          </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
-        <div class="portfolio-wrapper">
-          <div class="gallery">
-          <a href="images/t-pic8.jpg" class="flipLightBox-4">
-            <img src="images/pic8.jpg" alt="Image 2" style="top: 0px;">
-          </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio card mix_all" data-cat="card" style="  display: inline-block; opacity: 1;">
-        <div class="portfolio-wrapper">
-          <div class="gallery">
-          <a href="images/t-pic9.jpg" class="flipLightBox-4">
-            <img src="images/pic9.jpg" alt="Image 2" style="top: 0px;">
-          </a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio logo1 mix_all" data-cat="logo">
-        <div class="portfolio-wrapper">
-          <div class="gallery">
-          <a href="images/t-pic10.jpg" class="flipLightBox-4">
-            <img src="images/pic10.jpg" alt="Image 2" style="top: 0px;">
           </a>
           </div>
         </div>
