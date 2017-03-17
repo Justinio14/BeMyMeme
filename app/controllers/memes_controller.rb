@@ -4,15 +4,26 @@ class MemesController < ApplicationController
     @memes = Meme.all
   end
 
+  def add
+    @user = current_user.id
+    @find_user = User.find(@user)
+    @meme_get = params[:id].to_i
+      # @this_meme = Meme.find(params[:id]) 
+     @find_user.memes << Meme.find(@meme_get)
+     flash[:notice] = 'Meme was saved.'
+  end
+
   def meme_gallery
     API.refresh #remove this in production
-    @meme_first = Meme.first
-    @meme_last = Meme.last
     @memes = Meme.all
     respond_to do |format|
       format.html
       format.js
     end
+  end
+
+  def meme_params
+    params.require(:memes).permit(:id)
   end
 
 end
