@@ -1,9 +1,9 @@
-
-<h3 id="myModalLabel">Modal header</h3>
- <%@memes.each do |meme| %>
-   <%=image_tag(meme.name)%>
- <form action='/add' method='post' target='dummyframe'>
-   <input  type='text' style='display:none' value="<%=meme.id%>">
-  <input type='submit' value='Save'>
-</form> <br>
+<h3 id="myModalLabel">Modal header</h3> 
+<%@memes.each do |meme| %> 
+<%=image_tag(meme.name)%> 
+<form action='/add' method='post' target='dummyframe'> 
+  <input  type='text' style='display:none' name="id" value="<%=meme.id%>"> 
+  <input type='submit' value='Save'> 
+</form>
+  <br> 
 <%end%>

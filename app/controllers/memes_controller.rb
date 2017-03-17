@@ -5,11 +5,13 @@ class MemesController < ApplicationController
   end
 
   def add
-     @user = User.find(session[:user_id])
-     @memes = Meme.find(params[:meme.id])
-     @user.memes << @memes
+    @user = current_user.id
+    @find_user = User.find(@user)
+    @meme_get = params[:id].to_i
+      # @this_meme = Meme.find(params[:id]) 
+    #  @find_user.memes << Meme.find(@meme_get)
      flash[:notice] = 'Meme was saved.'
-   end
+  end
 
   def meme_gallery
     API.refresh #remove this in production
@@ -18,6 +20,10 @@ class MemesController < ApplicationController
       format.html
       format.js
     end
+  end
+
+  def meme_params
+    params.require(:memes).permit(:id)
   end
 
 end
