@@ -47,10 +47,8 @@ feature 'profiles' do
       end
 
 
-      it "should take user to own profile when they click link My Profile" do
+      it "sees own profile when they click link My Profile" do
         click_link('My Profile')
-        visit '/profiles'
-        p current_user.username
         expect(page).to have_content('Leslie')
     end
 
