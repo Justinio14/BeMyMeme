@@ -54,6 +54,11 @@ feature 'profiles' do
         expect(page).to have_content('Albert Square erstwhile Lothario')
     end
 
+    it "Can edit own profile when they click link Edit Profile" do
+      click_link('My Profile')
+      expect(page).to have_content('Edit')
+  end
+
       xit "should take user to a user profile when they click a user Profile" do
         visit '/profiles'
         click_link 'test1'
