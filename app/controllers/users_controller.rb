@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-before_action :find_user, only: [:edit, :update]
+before_action :find_user, only: [:edit, :update, :destroy]
 
   def edit
   end
@@ -8,9 +8,14 @@ before_action :find_user, only: [:edit, :update]
   def update
   @user.update(post_params)
   flash[:notice] = 'Profile has been updated'
-  redirect_to profiles_path
+  redirect_to profile_path
   end
 
+  def destroy
+    @user.destroy
+    flash[:notice] = 'Account successfully deleted'
+    redirect_to root_path
+  end
 
   private
 

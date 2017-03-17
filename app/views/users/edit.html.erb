@@ -1,10 +1,13 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/edit.html.erb</p>
-<%= form_for( resource_name: @user,
-              url: edit_user_path(resource_name),
-              html: { method: :patch }) do |f| %>
+<h3>Edit your profile:</h3><br><br>
+<%= form_for  @user do |f| %>
 
 <%= f.label :bio %>
-<%= f.text_field :bio %>
+<%= f.text_area :bio %><br><br>
+<%= f.label :location %>
+<%= f.text_field :location %><br><br>
+<%= f.label :postcode %>
+<%= f.text_field :postcode %><br><br>
+<%= f.label :interested_in %>
+<%= f.text_field :interested_in %><br><br>
 <%= f.submit %>
 <% end %>

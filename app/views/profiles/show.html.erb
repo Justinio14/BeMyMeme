@@ -44,6 +44,7 @@
 						<li class="active"><%= link_to 'Home', root_path %></li>
 						<li class=""><%= link_to 'Edit', edit_user_path %></li>
 						<li class=""><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+						<li class=""><%= link_to 'Delete Account', user_path, method: :delete %></li>
 						<!-- <li class=""><a href="gallery.html">Report User</a></li>
 						<li class=""><a href="contact.html">Block User</a></li> -->
 					</ul>
@@ -67,7 +68,6 @@
 
 				   <h3>About Me</h3>
 				   <p><%= current_user.bio %></p>
-				   <button class="btn1 btn-1 btn-1a">Read More</button>
 				</div>
 				<div class="clear"></div>
 		    </div>

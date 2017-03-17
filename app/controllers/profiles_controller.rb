@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
 
-    before_action :find_user, only: [:show, :edit, :update, :destroy]
+  before_action :find_user, only: [:show]
 
   def index
     @user = User.all
@@ -8,9 +8,6 @@ class ProfilesController < ApplicationController
 
 
   def show
-  end
-
-  def edit
   end
 
   private

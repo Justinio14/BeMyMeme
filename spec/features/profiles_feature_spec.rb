@@ -56,9 +56,18 @@ feature 'profiles' do
 
     it "Can edit own profile when they click link Edit Profile" do
       click_link('My Profile')
-      expect(page).to have_content('Edit')
+      click_link('Edit')
+      fill_in('user_bio', with: 'Better looking than Elvis')
+      click_button('Update User')
+      expect(page).to have_content('Better looking than Elvis')
   end
 
+    it "User can delete their account" do
+      click_link('My Profile')
+      click_link('Delete Account')
+      expect(current_path).to eq('/')
+      expect(page).to have_content('Account successfully deleted')
+    end
       xit "User can see another user profile when they click a Profile link" do
         visit '/profiles'
         click_link 'test1'
