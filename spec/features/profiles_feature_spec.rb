@@ -41,7 +41,8 @@ feature 'profiles' do
         fill_in('Email', with: 'test@example.com')
         fill_in('Password', with: 'testtest')
         fill_in('Password confirmation', with: 'testtest')
-        fill_in('user_username', with: 'Leslie')
+        fill_in('user_username', with: 'Dirty Den')
+        fill_in('user_bio', with: 'Albert Square erstwhile Lothario')
         fill_in('Dob', with: '24/01/1994')
         click_button('Sign up')
       end
@@ -49,7 +50,8 @@ feature 'profiles' do
 
       it "sees own profile when they click link My Profile" do
         click_link('My Profile')
-        expect(page).to have_content('Leslie')
+        expect(page).to have_content('Dirty Den')
+        expect(page).to have_content('Albert Square erstwhile Lothario')
     end
 
       xit "should take user to a user profile when they click a user Profile" do
@@ -61,10 +63,11 @@ feature 'profiles' do
   end
 
     context 'user not signed in' do
-      xit "page should give options to Sign Up or Log in" do
+      it "page should not give option to view my profile" do
         visit('/')
+        expect(page).not_to have_content('My Profile')
         expect(page).to have_content('Sign up')
-        expect(page).to have_content('Log in')
+        expect(page).to have_content('Sign in')
       end
     end
   end
