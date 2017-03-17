@@ -41,18 +41,34 @@ feature 'profiles' do
         fill_in('Email', with: 'test@example.com')
         fill_in('Password', with: 'testtest')
         fill_in('Password confirmation', with: 'testtest')
-        fill_in('user_username', with: 'Leslie')
+        fill_in('user_username', with: 'Dirty Den')
+        fill_in('user_bio', with: 'Albert Square erstwhile Lothario')
         fill_in('Dob', with: '24/01/1994')
         click_button('Sign up')
       end
 
 
-      xit "should take user to own profile when they click link My Profile" do
-        click_link('My profile')
-        expect(page).to have_content('Leslie')
+      it "sees own profile when they click link My Profile" do
+        click_link('My Profile')
+        expect(page).to have_content('Dirty Den')
+        expect(page).to have_content('Albert Square erstwhile Lothario')
     end
 
-      xit "should take user to a user profile when they click a user Profile" do
+    it "Can edit own profile when they click link Edit Profile" do
+      click_link('My Profile')
+      click_link('Edit')
+      fill_in('user_bio', with: 'Better looking than Elvis')
+      click_button('Update User')
+      expect(page).to have_content('Better looking than Elvis')
+  end
+
+    it "User can delete their account" do
+      click_link('My Profile')
+      click_link('Delete Account')
+      expect(current_path).to eq('/')
+      expect(page).to have_content('Account successfully deleted')
+    end
+      xit "User can see another user profile when they click a Profile link" do
         visit '/profiles'
         click_link 'test1'
         expect(page).to have_content 'test1'
@@ -61,10 +77,11 @@ feature 'profiles' do
   end
 
     context 'user not signed in' do
-      xit "page should give options to Sign Up or Log in" do
+      it "page should not give option to view my profile" do
         visit('/')
+        expect(page).not_to have_content('My Profile')
         expect(page).to have_content('Sign up')
-        expect(page).to have_content('Log in')
+        expect(page).to have_content('Sign in')
       end
     end
   end
