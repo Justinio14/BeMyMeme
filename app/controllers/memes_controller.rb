@@ -10,5 +10,5 @@ class MemesController < ApplicationController
       format.js
     end
   end
-  
+
 end
