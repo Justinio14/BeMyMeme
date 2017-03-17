@@ -3,13 +3,11 @@ class ChatsController < ApplicationController
   layout false
 
   def index
-    @user = User.all
-    @chat = Chat.all
-    p @user
+      @users = User.where.not("id = ?",current_user.id).order("created_at DESC")
+      @chats = Chat.involving(current_user).order("created_at DESC")
   end
 
 
-  
 
   def create
     if Chat.between(params[:chat_initiator],params[:chat_recipient]).present?

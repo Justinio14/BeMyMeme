@@ -4,6 +4,10 @@ class Chat < ApplicationRecord
   has_many :users
   has_many :messages, dependent: :destroy
 
+  scope :involving, -> (user) do
+    where("chat.chat_initiator =? OR chat.chat_recipient =?",user.id,user.id)
+  end
+
   scope :between, -> (chat_initiator,chat_recipient) do
     where("(chat.chat_initiator = ? AND chat.chat_recipient =?) OR (chat.chat_recipient = ? AND chat.chat_recipient =?)", chat_initiator,chat_recipient, chat_recipient, chat_initiator)
   end
