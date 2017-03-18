@@ -54,10 +54,10 @@ feature 'profiles' do
       end
 
 
-      it "sees own profile when they click link My Profile" do
-        click_link('My Profile')
-        expect(page).to have_content('Dirty Den')
-        expect(page).to have_content('Albert Square erstwhile Lothario')
+    it "sees own profile when they click link My Profile" do
+      click_link('My Profile')
+      expect(page).to have_content('Dirty Den')
+      expect(page).to have_content('Albert Square erstwhile Lothario')
     end
 
     it "Can edit own profile when they click link Edit Profile" do
@@ -67,6 +67,13 @@ feature 'profiles' do
       click_button('Update User')
       expect(page).to have_content('Better looking than Elvis')
   end
+
+    it "Can add memes to my profile" do
+      click_link('Add memes')
+      within('#modal-window') do
+      expect(page).to have_content('modal-content')
+      end
+    end
 
     it "User can delete their account" do
       click_link('My Profile')
