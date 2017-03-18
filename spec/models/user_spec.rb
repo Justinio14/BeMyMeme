@@ -9,4 +9,5 @@ RSpec.describe User, type: :model do
                rejecting('text/plain', 'text/xml') }
   it { should validate_attachment_size(:image).
                             less_than(1.megabytes) }
+  it { should have_and_belong_to_many(:memes) }
 end
