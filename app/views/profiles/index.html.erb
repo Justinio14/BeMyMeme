@@ -14,6 +14,7 @@
     <section>
 			<h5><span> Dream memes </span></h5>
 		   <div class="container">
+         <%= link_to 'Add Memes', meme_gallery_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
          <% if user_signed_in? %>
            <% @user.each do |user| %>
              <% unless user.id == current_user.id %>
@@ -31,4 +32,9 @@
     </section>
 </div>
 </body>
+<div id="modal-window" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content"></div>
+ </div>
+</div>
 </html>
