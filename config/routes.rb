@@ -5,6 +5,14 @@ Rails.application.routes.draw do
   get "meme_gallery" => 'memes#meme_gallery', :as => :meme_gallery
   post "add" => 'memes#add', :as => :add
   resources :profiles, :memes
+
+  resources :chats, only: [:index, :create] do
+    member do
+     post :close
+    end
+    resources :messages, only: [:create]
+  end
+
   resources :api, only: [:index]
   resources :users, only: [:edit,:update, :destroy, :show]
 
