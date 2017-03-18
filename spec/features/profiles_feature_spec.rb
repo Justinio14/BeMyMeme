@@ -21,7 +21,7 @@ feature 'profiles' do
     end
 
     it 'should show a list of other user profiles' do
-      visit '/'
+      visit '/profiles'
       expect(page).to have_content 'test1'
       expect(page).to have_content 'male'
       expect(page).to have_content 'Kimberley'
@@ -76,7 +76,7 @@ feature 'profiles' do
     end
 
     it "User can see another user profile when they click a Profile link" do
-      visit '/'
+      visit '/profiles'
       click_link('View profile', match: :first)
       expect(page).to have_content 'test'
       expect(current_path).to eq "/profiles/1"
