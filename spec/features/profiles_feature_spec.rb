@@ -69,10 +69,9 @@ feature 'profiles' do
   end
 
     it "Can add memes to my profile" do
-      click_link('Add memes')
-      within('#modal-window') do
-      expect(page).to have_content('modal-content')
-      end
+      click_link('My Profile')
+      click_link('Add Memes')
+      expect(page).to have_content('Modal header')
     end
 
     it "User can delete their account" do
