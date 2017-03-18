@@ -10,11 +10,9 @@ class ChatsController < ApplicationController
 
   def create
    @chat = Chat.get(current_user.id, params[:user_id])
-
    add_to_chats unless chatted?
-
    respond_to do |format|
-     format.js
+    format.js
    end
  end
 
