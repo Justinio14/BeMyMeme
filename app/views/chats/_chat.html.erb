@@ -1,10 +1,8 @@
 <li>
   <div class="panel panel-default" data-conversation-id="<%= chat.id %>">
     <div class="panel-heading">
-      <%= @user%>
-      <%= @chat%>
       <%= link_to chat.opposed_user(user).username, '', class: 'toggle-window' %>
-      <%= link_to "x", '', class: "btn btn-default btn-xs pull-right" %>
+      <%= link_to "x", close_chat_path(chat), class: "btn btn-default btn-xs pull-right", remote: true, method: :post %>
     </div>
 
     <div class="panel-body" style="display: none;">
@@ -13,6 +11,11 @@
           <%= render 'chats/chat_content', messages: chat.messages, user: user %>
         </ul>
       </div>
+      <%= form_for [chat, chat.messages.new], remote: true do |f| %>
+        <%= f.hidden_field :user_id, value: user.id %>
+        <%= f.text_area :message, class: "form-control" %>
+        <%= f.submit "Send", class: "btn btn-success send-button" %>
+      <% end %>
     </div>
   </div>
 </li>

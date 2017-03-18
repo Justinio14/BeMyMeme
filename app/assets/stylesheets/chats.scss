@@ -1,3 +1,15 @@
 // Place all the styles related to the chats controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn-xs{
+  font-size: 6px !important;
+  padding: 5px !important;
+  margin: 0px !important;
+}
+
+.send-button {
+  font-size: 16px !important;
+  padding: 8px 16px !important;
+  margin: 4px !important;
+}

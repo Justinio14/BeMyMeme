@@ -14,7 +14,17 @@ class ChatsController < ApplicationController
    respond_to do |format|
     format.js
    end
- end
+  end
+
+  def close
+    @chat = Chat.find(params[:id])
+
+    session[:chats].delete(@chat.id)
+
+    respond_to do |format|
+      format.js
+    end
+  end
 
  private
 
