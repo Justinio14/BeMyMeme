@@ -4,7 +4,7 @@ class ChatsController < ApplicationController
     session[:chats] ||= []
 
     @users = User.all.where.not(id: current_user)
-    @chats = Chat.includes(:chat_recipient, :messages)
+    @chats = Chat.includes(:recipient, :messages)
                                  .find(session[:chats])
   end
 

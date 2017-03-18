@@ -22,7 +22,7 @@ class Chat < ApplicationRecord
 
 
   def opposed_user(user)
-    user == chat_recipient ? chat_initiator : chat_recipient
+    user == recipient ? sender : recipient
   end
 
 end
