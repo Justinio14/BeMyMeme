@@ -5,9 +5,14 @@ class MemesController < ApplicationController
   end
 
   def add
-    @user = current_user.id
-    @find_user = User.find(@user)
+    @user_id = current_user.id
+    @user = User.find(@user_id)
     @meme_get = params[:id].to_i
+    @user.memes << Meme.find(@meme_get)
+    #assocation is being recognised, but possibly not been saved
+    p @user.memes
+    # @user.memes
+
       # @this_meme = Meme.find(params[:id]) 
     #  @find_user.memes << Meme.find(@meme_get)
      flash[:notice] = 'Meme was saved.'
