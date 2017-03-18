@@ -18,7 +18,7 @@ class MemesController < ApplicationController
     API.refresh #remove this in production
     @memes = Meme.all
     respond_to do |format|
-      format.html
+      format.html {render '_meme_gallery'}
       format.js
     end
   end

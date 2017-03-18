@@ -69,10 +69,9 @@ feature 'profiles' do
   end
 
     it "Can add memes to my profile" do
-      click_link('Add memes')
-      within('#modal-window') do
-      expect(page).to have_content('modal-content')
-      end
+      click_link('My Profile')
+      click_link('Add Memes')
+      expect(page).to have_content('Meme Gallery')
     end
 
     it "User can delete their account" do
@@ -81,11 +80,12 @@ feature 'profiles' do
       expect(current_path).to eq('/')
       expect(page).to have_content('Account successfully deleted')
     end
-      xit "User can see another user profile when they click a Profile link" do
-        visit '/profiles'
-        click_link 'test1'
-        expect(page).to have_content 'test1'
-        expect(current_path).to eq "/profiles/#{test1.id}"
+
+    it "User can see another user profile when they click a Profile link" do
+      visit '/'
+      click_link('View profile', match: :first)
+      expect(page).to have_content 'test'
+      expect(current_path).to eq "/profiles/1"
     end
   end
 
