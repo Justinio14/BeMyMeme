@@ -11,6 +11,7 @@ class MemesController < ApplicationController
       # @this_meme = Meme.find(params[:id]) 
     #  @find_user.memes << Meme.find(@meme_get)
      flash[:notice] = 'Meme was saved.'
+     redirect_to '/'
   end
 
   def meme_gallery
