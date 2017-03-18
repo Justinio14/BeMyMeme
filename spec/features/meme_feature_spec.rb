@@ -8,4 +8,12 @@ feature 'index will show meme gallery' do
     expect(page).to have_content('i.imgur.com')
     end
   end
+  # 
+  # context 'adding a meme' do
+  #   it 'should allow the user to add a meme from the gallery' do
+  #     API.refresh
+  #
+  #   end
+  # end
+
 end
