@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   devise_for :users, :controllers => {registrations: 'registrations'}
 
-  resources :profiles, :memes, :chats
+  resources :profiles, :memes
+  resources :chats, only: [:index, :create]
   resources :api, only: [:index]
   resources :users, only: [:edit,:update, :destroy]
 
