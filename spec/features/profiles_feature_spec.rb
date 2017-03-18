@@ -68,10 +68,18 @@ feature 'profiles' do
       expect(page).to have_content('Better looking than Elvis')
   end
 
-    it "Can add memes to my profile" do
+    it "Can view memes gallery" do
       click_link('My Profile')
       click_link('Add Memes')
       expect(page).to have_content('Meme Gallery')
+    end
+
+    it "Can add memes to my profile" do
+      click_link('My Profile')
+      click_link('Add Memes')
+      click_button('Save', match: :first)
+      expect(page).to have_content('Meme was saved.')
+      #expect (memes_users.length).to change_by(1)
     end
 
     it "User can delete their account" do
@@ -85,7 +93,7 @@ feature 'profiles' do
       visit '/'
       click_link('View profile', match: :first)
       expect(page).to have_content 'test'
-      expect(current_path).to eq "/profiles/1"
+      expect(current_path).to eq "/profiles/#{User.first.id}"
     end
   end
 
