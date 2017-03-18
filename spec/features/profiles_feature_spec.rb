@@ -31,6 +31,12 @@ feature 'profiles' do
       visit '/'
       expect(page).to_not have_content 'Leslie'
     end
+
+    it 'should let the user select memes' do
+      visit '/'
+      click_link 'Add Memes'
+      expect(page).to have_content 'Save'
+    end
   end
 
   feature 'viewing user profiles' do
