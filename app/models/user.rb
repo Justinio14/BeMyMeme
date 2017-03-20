@@ -9,6 +9,6 @@ class User < ApplicationRecord
   content_type: {content_type: /\Aimage\/.*\Z/},
   size: {in: 0..1.megabytes }
   has_many :chats
-  has_many :memes
+  has_and_belongs_to_many :memes
   has_many :blocks
 end

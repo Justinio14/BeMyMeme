@@ -74,12 +74,12 @@ feature 'profiles' do
       expect(page).to have_content('Meme Gallery')
     end
 
-    xit "Can add memes to my profile" do
+    it "Can add memes to my profile" do
       click_link('My Profile')
       click_link('Add Memes')
       click_button('Save', match: :first)
       expect(page).to have_content('Meme was saved.')
-      expect(memes_users.length).to_change by(1)
+      expect(User.first.memes).to include(701)
     end
 
     it "User can delete their account" do
