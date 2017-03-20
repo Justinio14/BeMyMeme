@@ -70,7 +70,9 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
+  config.action_cable.allowed_request_origins = ['https://bemymeme.herokuapp.com',
+                                                 'https://bemymeme.herokuapp.com']
+  config.action_cable.url = "wss://bemymeme.herokuapp.com/cable"
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
