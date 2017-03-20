@@ -6,6 +6,13 @@ Rails.application.routes.draw do
   post "add" => 'memes#add', :as => :add
   resources :profiles, :memes
   resources :api, :home, only: [:index]
+
+  resources :chats, only: [:index, :create] do
+    member do
+     post :close
+    end
+  end
+
   resources :users, only: [:edit,:update, :destroy, :show]
 
   root to: "home#index"

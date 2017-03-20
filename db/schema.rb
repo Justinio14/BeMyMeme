@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317160724) do
+
+ActiveRecord::Schema.define(version: 20170320113712) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,10 +41,6 @@ ActiveRecord::Schema.define(version: 20170317160724) do
     t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "meme_id"
-    t.integer  "user_id"
-    t.index ["meme_id"], name: "index_memes_on_meme_id", using: :btree
-    t.index ["user_id"], name: "index_memes_on_user_id", using: :btree
   end
 
   create_table "memes_users", id: false, force: :cascade do |t|
@@ -57,7 +55,9 @@ ActiveRecord::Schema.define(version: 20170317160724) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.integer  "chat_id"
+    t.integer  "user_id"
     t.index ["chat_id"], name: "index_messages_on_chat_id", using: :btree
+    t.index ["user_id"], name: "index_messages_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -74,7 +74,6 @@ ActiveRecord::Schema.define(version: 20170317160724) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.integer  "chat_id"
-    t.integer  "meme_id"
     t.text     "bio"
     t.date     "dob"
     t.string   "gender"
@@ -88,16 +87,22 @@ ActiveRecord::Schema.define(version: 20170317160724) do
     t.datetime "image_updated_at"
     t.index ["chat_id"], name: "index_users_on_chat_id", using: :btree
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
-    t.index ["meme_id"], name: "index_users_on_meme_id", using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  end
+
+  create_table "users_memes", force: :cascade do |t|
+    t.integer "meme_id"
+    t.integer "user_id"
+    t.index ["meme_id"], name: "index_users_memes_on_meme_id", using: :btree
+    t.index ["user_id"], name: "index_users_memes_on_user_id", using: :btree
   end
 
   add_foreign_key "blocks", "users"
   add_foreign_key "chats", "chats"
   add_foreign_key "chats", "users"
-  add_foreign_key "memes", "memes"
-  add_foreign_key "memes", "users"
   add_foreign_key "messages", "chats"
+  add_foreign_key "messages", "users"
   add_foreign_key "users", "chats"
-  add_foreign_key "users", "memes"
+  add_foreign_key "users_memes", "memes"
+  add_foreign_key "users_memes", "users"
 end
