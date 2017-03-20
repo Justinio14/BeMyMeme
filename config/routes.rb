@@ -10,7 +10,6 @@ Rails.application.routes.draw do
     member do
      post :close
     end
-    resources :messages, only: [:create]
   end
 
   resources :api, only: [:index]
