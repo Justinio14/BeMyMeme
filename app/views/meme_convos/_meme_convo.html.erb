@@ -1,0 +1,16 @@
+<li>
+  <div class="panel panel-default" data-meme_convo-id="<%= meme_convo.id %>">
+    <div class="panel-heading">
+      <%= link_to meme_convo.opposed_user(user).email, '', class: 'toggle-window' %>
+      <%= link_to "x", '', class: "btn btn-default btn-xs pull-right" %>
+    </div>
+ 
+    <div class="panel-body" style="display: none;">
+      <div class="memes-list">
+        <ul>
+          <%= render 'meme_convos/convo_memes', memes: meme_convo.memes, user: user %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</li>

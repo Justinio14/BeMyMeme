@@ -12,6 +12,6 @@ class User < ApplicationRecord
   has_and_belongs_to_many :memes
   has_many :chats, foreign_key: :chat_initiator, dependent: :destroy
   has_many :messages, dependent: :destroy
-
+  has_many :meme_convos, foreign_key: :chat_initiator
   has_many :blocks
 end

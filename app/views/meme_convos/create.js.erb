@@ -1,0 +1,13 @@
+var conversations = $('#meme-convos-list');
+var conversation = conversations.find("[data-meme_convo-id='" + "<%= @meme_convo.id %>" + "']");
+ 
+if (conversation.length !== 1) {
+  conversations.append("<%= j(render 'meme_convos/meme_convo', meme_convo: @meme_convo, user: current_user) %>");
+  conversation = conversations.find("[data-meme_convo-id='" + "<%= @meme_convo.id %>" + "']");
+}
+ 
+conversation.find('.panel-body').show();
+ 
+var messages_list = conversation.find('.memes-list');
+var height = messages_list[0].scrollHeight;
+messages_list.scrollTop(height);

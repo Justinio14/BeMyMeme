@@ -11,7 +11,7 @@ Rails.application.routes.draw do
      post :close
     end
   end
-
+  resources :meme_convos, only: [:index, :create]
   resources :api, only: [:index]
   resources :users, only: [:edit,:update, :destroy, :show]
 

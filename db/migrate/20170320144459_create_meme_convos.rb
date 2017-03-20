@@ -6,5 +6,7 @@ class CreateMemeConvos < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+
+    add_index :meme_convos, [:chat_recipient, :chat_initiator], unique: true
   end
 end
