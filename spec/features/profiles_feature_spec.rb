@@ -31,12 +31,6 @@ feature 'profiles' do
       visit '/'
       expect(page).to_not have_content 'Leslie'
     end
-
-    xit 'should let the user select memes' do
-      visit '/'
-      click_link 'Add Memes'
-      expect(page).to have_content 'Save'
-    end
   end
 
   feature 'viewing user profiles' do
@@ -54,10 +48,10 @@ feature 'profiles' do
       end
 
 
-      it "sees own profile when they click link My Profile" do
-        click_link('My Profile')
-        expect(page).to have_content('Dirty Den')
-        expect(page).to have_content('Albert Square erstwhile Lothario')
+    it "sees own profile when they click link My Profile" do
+      click_link('My Profile')
+      expect(page).to have_content('Dirty Den')
+      expect(page).to have_content('Albert Square erstwhile Lothario')
     end
 
     it "Can edit own profile when they click link Edit Profile" do
@@ -67,6 +61,21 @@ feature 'profiles' do
       click_button('Update User')
       expect(page).to have_content('Better looking than Elvis')
   end
+
+    it "Can view memes gallery" do
+      click_link('My Profile')
+      click_link('Add Memes')
+      expect(page).to have_content('Meme Gallery')
+    end
+
+    it "Can add memes to my profile" do
+      click_link('My Profile')
+      click_link('Add Memes')
+      click_button('Save', match: :first)
+      expect(page).to have_content('Meme was saved.')
+      @user = User.find_by(username: 'Dirty Den')
+      expect(@user.memes.count).to eq 1
+    end
 
     it "User can delete their account" do
       click_link('My Profile')
@@ -79,7 +88,7 @@ feature 'profiles' do
       visit '/'
       click_link('View profile', match: :first)
       expect(page).to have_content 'test'
-      expect(current_path).to eq "/profiles/1"
+      expect(current_path).to eq "/profiles/#{User.first.id}"
     end
   end
 

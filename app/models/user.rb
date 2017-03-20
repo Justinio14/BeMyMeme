@@ -8,8 +8,10 @@ class User < ApplicationRecord
   validates_attachment :image,
   content_type: {content_type: /\Aimage\/.*\Z/},
   size: {in: 0..1.megabytes }
+
+  has_and_belongs_to_many :memes
   has_many :chats, foreign_key: :chat_initiator, dependent: :destroy
   has_many :messages, dependent: :destroy
-  has_many :memes
+
   has_many :blocks
 end
