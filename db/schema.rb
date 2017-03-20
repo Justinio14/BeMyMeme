@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20170320113712) do
-
+ActiveRecord::Schema.define(version: 20170320144829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +32,20 @@ ActiveRecord::Schema.define(version: 20170320113712) do
     t.integer  "user_id"
     t.index ["chat_id"], name: "index_chats_on_chat_id", using: :btree
     t.index ["user_id"], name: "index_chats_on_user_id", using: :btree
+  end
+
+  create_table "meme_convos", force: :cascade do |t|
+    t.integer  "chat_initiator"
+    t.integer  "chat_recipient"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "memeconvos_memes", force: :cascade do |t|
+    t.integer "meme_convo_id"
+    t.integer "meme_id"
+    t.index ["meme_convo_id"], name: "index_memeconvos_memes_on_meme_convo_id", using: :btree
+    t.index ["meme_id"], name: "index_memeconvos_memes_on_meme_id", using: :btree
   end
 
   create_table "memes", force: :cascade do |t|
@@ -100,6 +112,8 @@ ActiveRecord::Schema.define(version: 20170320113712) do
   add_foreign_key "blocks", "users"
   add_foreign_key "chats", "chats"
   add_foreign_key "chats", "users"
+  add_foreign_key "memeconvos_memes", "meme_convos"
+  add_foreign_key "memeconvos_memes", "memes"
   add_foreign_key "messages", "chats"
   add_foreign_key "messages", "users"
   add_foreign_key "users", "chats"
