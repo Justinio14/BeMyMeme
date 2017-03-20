@@ -12,12 +12,12 @@ RSpec.describe MemesController, type: :controller do
   describe "GET #add" do
     subject {get :add}
 
-    xit 'will add row to memes_users table' do
-      API.refresh
+    it 'will add row to memes_users table' do
       user = User.create! :email => "add@meme.com", :password => 'topsecret', :password_confirmation => 'topsecret', :username => 'testaddmeme', :bio => 'great tester', :gender => 'not sure', :postcode => 'NG9 3GW', :location => 'Bramcote', :interested_in => 'female'
+      Meme.create! :id => 0, :name => 'i.imgur.com/5ffdafadsfd', :tag => "yay"
       sign_in user
-      p user
-      expect{subject}.to change{user.memes}
+
+      expect{subject}.to change{user.memes.count}
     end
   end
 end

@@ -31,12 +31,6 @@ feature 'profiles' do
       visit '/'
       expect(page).to_not have_content 'Leslie'
     end
-
-    xit 'should let the user select memes' do
-      visit '/'
-      click_link 'Add Memes'
-      expect(page).to have_content 'Save'
-    end
   end
 
   feature 'viewing user profiles' do
@@ -79,7 +73,8 @@ feature 'profiles' do
       click_link('Add Memes')
       click_button('Save', match: :first)
       expect(page).to have_content('Meme was saved.')
-      expect(User.first.memes).to include(701)
+      @user = User.find_by(username: 'Dirty Den')
+      expect(@user.memes.count).to eq 1
     end
 
     it "User can delete their account" do
