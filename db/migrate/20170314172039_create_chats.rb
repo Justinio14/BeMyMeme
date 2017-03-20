@@ -5,5 +5,6 @@ class CreateChats < ActiveRecord::Migration[5.0]
       t.integer :chat_recipient
       t.timestamps
     end
+    add_index :chats, [:chat_recipient, :chat_initiator], unique: true
   end
 end
