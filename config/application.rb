@@ -17,6 +17,8 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 Dotenv::Railtie.load
 
+config.assets.initialize_on_precompile = false
+
 HOSTNAME = ENV['HOSTNAME']
 
 module BeMyMeme
