@@ -1,5 +1,4 @@
-<h2>Sign up</h2>
-
+<div align='center'>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name),html: {multipart: true}) do |f| %>
   <%= devise_error_messages! %>
 
@@ -56,7 +55,7 @@
     <%= f.text_field :interested_in, autocomplete: "off" %>
   </div>
 
-  <div class="field">
+  <div  class="field">
   <%= f.file_field :image %>
   </div>
 
@@ -65,6 +64,6 @@
   </div>
 <% end %>
 
-<%= link_to 'Add Memes', meme_gallery_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
+<%= link_to 'Add Memes', meme_gallery_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %><br>
 <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
-<%= render "devise/shared/links" %>
+</div>
