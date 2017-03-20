@@ -30,8 +30,6 @@ class MemesController < ApplicationController
     params.require(:memes).permit(:id)
   end
 
-  def find_user
-  @user = User.find(params[:id])
-  end
+
 
 end
