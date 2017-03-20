@@ -1,0 +1,2 @@
+class MemeConvosController < ApplicationController
+end

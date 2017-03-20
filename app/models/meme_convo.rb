@@ -1,0 +1,2 @@
+class MemeConvo < ApplicationRecord
+end
