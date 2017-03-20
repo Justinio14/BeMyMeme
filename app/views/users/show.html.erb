@@ -85,6 +85,7 @@
 
     <section>
 			<h5><span> Me in Memes </span></h5>
+			<%= link_to 'Add Memes', meme_gallery_path,  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
 		   <div class="container">
 			<!-- <ul id="filters" class="clearfix">
 				<li><span class="filter active" data-filter="app card icon logo web">Categorie1</span></li>
@@ -202,4 +203,11 @@
 </section>
 
 </body>
+
+<div id="modal-window" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content"></div>
+ </div>
+</div>
+
 </html>
