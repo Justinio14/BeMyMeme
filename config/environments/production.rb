@@ -72,7 +72,8 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
   config.action_cable.allowed_request_origins = ['https://bemymeme.herokuapp.com',
                                                  'https://bemymeme.herokuapp.com']
-  config.action_cable.url = "wss://bemymeme.herokuapp.com/cable"
+
+  config.web_socket_server_url = "wss://bemymeme.herokuapp.com/cable"
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
