@@ -5,12 +5,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
 gem 'rails-controller-testing'
 gem 'redis'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'dotenv-rails'
-gem 'poltergeist'
 gem 'database_cleaner'
 
 gem 'rails', '~> 5.0.2'
@@ -40,7 +40,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 gem 'bootstrap-sass', '~> 3.3.6'
 
 
@@ -51,11 +50,15 @@ group :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.1'
+  gem 'poltergeist'
+  gem 'rails-controller-testing'
+  gem 'simplecov', '~> 0.12.0'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'factory_girl_rails'
 end
 
 group :development do
