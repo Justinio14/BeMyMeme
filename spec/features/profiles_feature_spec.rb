@@ -10,14 +10,8 @@ feature 'profiles' do
 
   context 'index' do
     before do
-      visit('/')
-      click_link('Sign up')
-      fill_in('Email', with: 'test@example.com')
-      fill_in('Password', with: 'testtest')
-      fill_in('Password confirmation', with: 'testtest')
-      fill_in('user_username', with: 'Leslie')
-      fill_in('Dob', with: '24/01/1994')
-      click_button('Sign up')
+      sign_up
+      test_1_user
     end
 
     it 'should show a list of other user profiles' do
@@ -36,15 +30,8 @@ feature 'profiles' do
   feature 'viewing user profiles' do
     context 'user signed in'  do
       before do
-        visit('/')
-        click_link('Sign up')
-        fill_in('Email', with: 'test@example.com')
-        fill_in('Password', with: 'testtest')
-        fill_in('Password confirmation', with: 'testtest')
-        fill_in('user_username', with: 'Dirty Den')
-        fill_in('user_bio', with: 'Albert Square erstwhile Lothario')
-        fill_in('Dob', with: '24/01/1994')
-        click_button('Sign up')
+      sign_up_DD
+      test_1_user
       end
 
 
@@ -88,7 +75,7 @@ feature 'profiles' do
       visit '/'
       click_link('View profile', match: :first)
       expect(page).to have_content 'test'
-      expect(current_path).to eq "/profiles/#{User.first.id}"
+      expect(current_path).to eq "/profiles/18"
     end
   end
 

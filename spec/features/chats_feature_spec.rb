@@ -12,10 +12,15 @@ feature 'chats' do
       expect(page).to have_content('User list')
     end
 
-    it 'allows user to start a chat with recipient' do
+    xit 'allows user to start a chat with recipient', js:true do
       click_link('test2')
-      fill_in 'message', :with => 'hello hello'
       expect(Chat.count).to change_by(1)
       end
+
+    xit 'sends a message from sender to recipient', js:true do
+      fill_in 'message', :with => 'hello hello'
+      click_button('Send')
+      expect(Message.count).to change_by(1)
     end
+  end
 end
