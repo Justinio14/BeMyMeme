@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'rails-controller-testing'
-
+gem 'redis', '~>3.2'
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'dotenv-rails'
