@@ -10,8 +10,6 @@ class MemesController < ApplicationController
     @meme_get = params[:id].to_i
     @user.memes << Meme.find(@meme_get)
 
-    p @user.memes
-
      flash[:notice] = 'Meme was saved.'
 
      redirect_to profile_path(@user)
