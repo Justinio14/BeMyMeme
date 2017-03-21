@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">BeMyMeme</a>
+                <a class="navbar-brand" href="/home">BeMyMeme</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -32,6 +32,12 @@
                   </li>
                   <li>
                     <%= link_to "My Profile", user_path(current_user.id)   %>
+                  </li>
+                    <li>
+                    <%= link_to "Chat", chats_path%>
+                  </li>
+                  <li>
+                    <%= link_to "Setting", edit_user_path(current_user.id)%>
                   </li>
                     <% else %>
                   <li>
@@ -50,9 +56,7 @@
         </div>
         <!-- /.container -->
     </nav>
-
-
-
+    <div style="padding: 50px;"></div>
     <%= yield %>
   </body>
 </html>

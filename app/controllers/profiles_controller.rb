@@ -6,8 +6,9 @@ class ProfilesController < ApplicationController
     @user = User.all
   end
 
-
   def show
+    i = @user.memes.length
+    @memes = @user.memes.take(i)
   end
 
   private
