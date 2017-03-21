@@ -75,7 +75,7 @@ feature 'profiles' do
       visit '/'
       click_link('View profile', match: :first)
       expect(page).to have_content 'test'
-      expect(current_path).to eq "/profiles/18"
+      expect(current_path).to eq "/profiles/#{User.second.id}"
     end
   end
 

@@ -12,9 +12,10 @@ feature 'chats' do
       expect(page).to have_content('User list')
     end
 
-    xit 'allows user to start a chat with recipient', js:true do
+    it 'allows user to open a chat with recipient', js:true do
       click_link('test2')
-      expect(Chat.count).to change_by(1)
+      expect(find'.panel-heading').to have_text('test2')
+      # expect(Chat.count).to change_by(1)
       end
 
     xit 'sends a message from sender to recipient', js:true do
@@ -22,5 +23,17 @@ feature 'chats' do
       click_button('Send')
       expect(Message.count).to change_by(1)
     end
+    xit 'sends a response from recipient to sender', js:true do
+    end
+
+    xit 'can close a chat from recipient to sender', js:true do
+    end
+
+    xit 'can close a chat from sender to recipient', js:true do
+    end
+
+
+
+
   end
 end
