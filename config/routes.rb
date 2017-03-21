@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post "add" => 'memes#add', :as => :add
   resources :profiles, :memes
   resources :api, :home, only: [:index]
+  
+  mount ActionCable.server => '/cable'
 
   resources :chats, only: [:index, :create] do
     member do
