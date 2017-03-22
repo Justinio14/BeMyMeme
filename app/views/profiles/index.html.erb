@@ -7,7 +7,9 @@
       <% @user.each do |user| %>
         <% unless user.id == current_user.id %>
           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <%=link_to image_tag(user.image.url), profile_path(user)%>
+            <%=link_to image_tag(user.image.url, :style=>"height: 300px; width: 300px; padding: 16px;"), profile_path(user)%>
+            <%=user.username%>
+            <%= user.gender%>
             <%=link_to "View profile", profile_path(user)%>
           </div>
         <% end %>

@@ -22,6 +22,13 @@ ul {
   list-style: none;
  }
 
+.notice {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+}
+
 .messages-list {
   max-height: 200px;
   overflow-y: auto;
@@ -60,4 +67,13 @@ ul {
 .username{
   font-style: bold;
   font-size: 32px;
+}
+
+.user-meme-container{
+  width: 100%;
+}
+
+.user-meme{
+  float: left;
+  width: 19.5%;
 }

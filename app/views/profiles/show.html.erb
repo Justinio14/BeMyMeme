@@ -4,33 +4,73 @@
 <head>
 <title>Be My Meme</title>
 </head>
-
 <body>
-	<section>
-        <div class="profile-text">
-       <h2><%= @user.username %></h2>
-        <div class="profile-image">
-        <%=image_tag @user.image.url, :style=>"height: 500px; width: 500px;" %>
-   	  </div>
-  	   <h3>About them</h3>
-  	   <p><%= @user.bio %></p>
-  	</div>
-      </section>
-    <section>
+<div class="wrap">
+   <div class="section group example">
       <div class="profile-text">
-    	<h5> Me in Memes </h5>
-      <%@memes.each do |meme| %> 
-      <%=image_tag meme.name, :style=>"height: 200px; width: 200px;" %> 
-      <%end%>
+      <div class="username"><h2><%= @user.username %></h2></div><br/>
+      <div class="profile-image">
+      <%= image_tag @user.image.url(:medium) %>
       </div>
-    </section>
-       
+    <h4>About Me</h4>
+    <p><%= @user.bio %></p>
+    <p><%= @user.gender%></p>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <section>
+    <div class="profile-text">
+   <h5> Me in Memes
+   <% if current_user == @user %>
+   <button class="btn btn-primary">
+   <%= link_to 'Add Memes', meme_gallery_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
+   </button>
+   <% end %></h5>
+        <div class="user-meme-container">
+        <%@memes.each do |meme| %> 
+        <div class="col-xs-6 col-sm-4">
+          <%=image_tag meme.name, :style=>"height: 200px; width: 200px; border-radius: 10px; border: 2px solid black;"%> <br>
+          <%if current_user == @user %>
+          <%=link_to 'Delete meme x'%>
+          </div>
+          <% end %>
+        <% end %>
+        </div>      
+    </div>
+  </section>
 
   <section>
   <div class="profile-text">
-    <%=link_to 'Chat to me!', chats_path, :class=>"btn btn-info"%>
+  <%if current_user!=@user%>
+  <%= link_to 'Talk to me!', chats_path, :class=> "btn btn-info"%>
+  <% end %>
   </div>
   </section>
 
 </body>
+
+<div id="modal-window" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"></div>
+  </div>
+</div>
+
+<section style="padding: 20px;">
+    <% if current_user == @user %>
+    <div class="col-sm-6">
+   <%= link_to 'Delete Account', user_path, :class=> "btn btn-danger", method: :delete,  :style=>"float:left; margin: 50px;" %>
+   </div>
+   <div class="col-sm-6">
+   <%= link_to 'Edit Account', edit_user_path, :class=> "btn btn-success", :style=>"float: right; margin: 50px;" %>
+    </div>
+   <% end %>
+   <div style="padding: 20px;">
+   </div>
+</section>
+
+
 </html>
