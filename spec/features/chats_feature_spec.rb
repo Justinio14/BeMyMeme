@@ -5,6 +5,7 @@ feature 'chats' do
   context 'signed in user' do
     before(:each) do
         sign_up
+        test_1_user
         visit ('/chats')
     end
 
@@ -13,8 +14,8 @@ feature 'chats' do
     end
 
     it 'allows user to open a chat with recipient', js:true do
-      click_link('test2')
-      expect(find'.panel-heading').to have_text('test2')
+      click_link('test1')
+      expect(find'.panel-heading').to have_text('test1')
       # expect(Chat.count).to change_by(1)
       end
 

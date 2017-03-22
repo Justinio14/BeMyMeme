@@ -9,7 +9,7 @@ feature 'profiles' do
   end
 
   context 'index' do
-    before do
+    before(:each) do
       sign_up
       test_1_user
     end
@@ -18,7 +18,6 @@ feature 'profiles' do
       visit '/profiles'
       expect(page).to have_content 'test1'
       expect(page).to have_content 'male'
-      expect(page).to have_content 'Kimberley'
     end
 
     it 'user should not be able to see their own profile' do
@@ -43,28 +42,11 @@ feature 'profiles' do
 
     it "Can edit own profile when they click link Edit Profile" do
       click_link('My Profile')
-      click_link('Edit')
+      click_link('Edit', match: :first)
       fill_in('user_bio', with: 'Better looking than Elvis')
       click_button('Update User')
       expect(page).to have_content('Better looking than Elvis')
   end
-
-    # it "Can view memes gallery" do
-    #   click_link('My Profile')
-    #   click_link('Add Memes')
-    #   expect(page).to have_content('Meme Gallery')
-    # end
-    #
-    # it "Can add memes to my profile" do
-    #   click_link('My Profile')
-    #   click_link('Add Memes')
-    #   click_button('Save', match: :first)
-    #   expect(page).to have_content('Meme was saved.')
-    #   @user = User.find_by(username: 'Dirty Den')
-    #   expect(@user.memes.count).to eq 1
-    #   expect(page).to have_content('Meme was saved.')
-    #   expect(current_path).to eq "/users/#{User.first.id}"
-    # end
 
     it "User can delete their account" do
       click_link('My Profile')

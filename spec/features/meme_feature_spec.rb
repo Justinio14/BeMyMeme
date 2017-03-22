@@ -30,7 +30,7 @@ feature 'Memes updates'
       @user = User.find_by(username: 'Dirty Den')
       expect(@user.memes.count).to eq 1
       expect(page).to have_content('Meme was saved.')
-      expect(current_path).to eq "/users/#{User.first.id}"
+      expect(current_path).to eq "/profiles/#{User.first.id}"
     end
   end
 
