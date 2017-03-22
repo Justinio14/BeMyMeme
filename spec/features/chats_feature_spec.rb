@@ -14,6 +14,7 @@ feature 'chats' do
     end
 
     it 'allows user to open a chat with recipient', js:true do
+
       click_link('test1')
       expect(find'.panel-heading').to have_text('test1')
       # expect(Chat.count).to change_by(1)
@@ -24,6 +25,17 @@ feature 'chats' do
       # fill_in 'message', :with => 'hello hello'
       click_button('Send')
       expect(Message.count).to eq(1)
+
+      click_link('test2')
+      expect(find'.panel-heading').to have_text('test2')
+      # expect(Chat.count).to change_by(1)
+      end
+
+    xit 'sends a message from sender to recipient', js:true do
+      fill_in 'message', :with => 'hello hello'
+      click_button('Send')
+      expect(Message.count).to change_by(1)
+
     end
     xit 'sends a response from recipient to sender', js:true do
     end
