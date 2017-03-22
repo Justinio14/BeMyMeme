@@ -9,7 +9,7 @@ class ProfilesController < ApplicationController
   def show
     find_user
     i = @user.memes.length
-    i = 6 if i > 6
+    i = 5 if i > 5
     @memes = @user.memes.take(i)
   end
 

@@ -2,9 +2,6 @@ class UsersController < ApplicationController
 
 before_action :find_user, only: [:edit, :update, :destroy]
 
-  def edit
-  end
-
   def update
   @user.update(post_params)
   flash[:notice] = 'Profile has been updated'
@@ -24,6 +21,6 @@ before_action :find_user, only: [:edit, :update, :destroy]
   end
 
   def post_params
-  params.require(:user).permit(:bio, :postcode, :location, :interested_in)
+  params.require(:user).permit(:bio, :postcode, :location, :interested_in, :image)
   end
 end
