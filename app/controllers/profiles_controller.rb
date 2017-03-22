@@ -6,8 +6,11 @@ class ProfilesController < ApplicationController
     @user = User.all
   end
 
-
   def show
+    find_user
+    i = @user.memes.length
+    i = 6 if i > 6
+    @memes = @user.memes.take(i)
   end
 
   private
