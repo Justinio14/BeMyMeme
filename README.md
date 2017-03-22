@@ -1,5 +1,7 @@
 <h1> BeMyMeme </h1>
 
+Link to app on Heroku at: <a href="http://bemymeme.herokuapp.com">http://bemymeme.herokuapp.com</a>
+
 <h3>Makers Academy Final Project</h3>
 
  Team Members
@@ -13,10 +15,8 @@
 </ul>
 
  Index Table
-[Task](#task)   |   [Technologies](#technologies)   | [Languages](#languages) |  [User Stories](#stories)  [Walkthrough](#walkthrough)  | [Installation](#installation)  |  [Screen Shots](#shots) | [Testing](#testing)
+[Task](#task)   |   [Technologies](#technologies)   | [Languages](#languages) |  [User Stories](#stories)   | [Walkthrough and Screenshots](#walkthrough)  | [Installation](#installation)  |   [Testing](#testing)   
 ***
-
-
 
 <a name="task"> Task </a>
 
@@ -25,9 +25,10 @@ To create web-based dating app that allows users to
 express themselves through memes. The app requires users to be able to upload memes to their profile, from an existing memes library. Users should also be able to chat to each other in realtime.
 
 The app should be created with strong TDD principles throughout. We will also be adhering to XP (extreme programming) methodology, and framing our progress in terms of XP values.
+***
 
 
-<h2><a name="#technologies"> Technologies </a></h2>
+<a name="technologies"> Technologies </a>
 <ul>
   <li> Rails 5.0.2 </li>
   <li> RSpec </li>
@@ -42,7 +43,7 @@ The app should be created with strong TDD principles throughout. We will also be
 </ul>
 
 
-<h2><a name="#languages"> Languages </a></h2>
+<a name="languages"> Languages </a>
 <ul>
   <li>Ruby </li>
   <li>JavaScript</li>
@@ -50,8 +51,9 @@ The app should be created with strong TDD principles throughout. We will also be
   <li>HTML</li>
   <li>CSS</li>
 </ul>
+***
 
-<h2><a name="#stories"> User Stories </a></h2>
+<a name="stories"> User Stories </a>
 
 ```
 As a visitor
@@ -90,8 +92,9 @@ As a user
 Because I have a low patience threshold
 I should receive new messages in realtime
 ```
+***
 
-<h2><a name="#walkthrough"> Walkthrough </a></h2>
+<a name="walkthrough"> Walkthrough and Screenshots </a>
 
 1. Visit <a href="http://bemymeme.herokuapp.com">http://bemymeme.herokuapp.com</a>
 2. Click 'Sign up'
@@ -112,3 +115,18 @@ I should receive new messages in realtime
   ---SCREENSHOT!!!----
 10. You can now send and receive messages in realtime!!!
   ---SCREENSHOT!!!----
+***
+
+<a name="installation"> Installation </a>
+
+1. In terminal, ```git clone https://github.com/Justinio14/BeMyMeme.git```.
+2. Run ```bundle install```.
+3. Create Databases ```rake db:create``` then ```rake db:migrate```.
+4. To run app on server, in terminal enter ```rails s```.
+5. Visit ```localhost:3000``` to begin using app.
+***
+
+<a name="testing"> Testing </a>
+
+
+---SCREENSHOTS---
