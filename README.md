@@ -12,10 +12,8 @@
   <li><a href="https://github.com/BasileKoko">Basile Koko</a></li>
 <ul>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+<h2> Index Table </h2>
+[Task](#task)  |  [Technologies](#technologies)  |  [User Stories](#stories) | [Walkthrough](#walkthrough)  | [Installation](#installation)  |  [Screen Shots](#shots) | [Testing](#testing)
 
 * Ruby version
 
