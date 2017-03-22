@@ -16,3 +16,9 @@ Gemfile.lock
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore Gemfile.lock
+Gemfile.lock
+
+# Ignore coverage/assets
+/coverage/assets
