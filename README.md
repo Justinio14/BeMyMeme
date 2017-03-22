@@ -2,7 +2,7 @@
 
 <h3>Makers Academy Final Project</h3>
 
-<h2> Team Members </h2>
+ Team Members
 <ul>
   <li><a href="https://github.com/thesedatedprince">Matt Perry</a></li>
   <li><a href="https://github.com/gbhachu">Gurminder Bhachu</a></li>
@@ -10,19 +10,24 @@
   <li><a href="https://github.com/Justinio14">Justin Butwell</a></li>
   <li><a href="https://github.com/herecomesjaycee">Jaycee Cheong</a></li>
   <li><a href="https://github.com/BasileKoko">Basile Koko</a></li>
-<ul>
+</ul>
 
-<h2> Index Table </h2>
-[Task](#task)  |  [Technologies](#technologies)  | [Languages](#languages) |  [User Stories](#stories) | [Walkthrough](#walkthrough)  | [Installation](#installation)  |  [Screen Shots](#shots) | [Testing](#testing)
+ Index Table
+[Task](#task)   |   [Technologies](#technologies)   | [Languages](#languages) |  [User Stories](#stories)  [Walkthrough](#walkthrough)  | [Installation](#installation)  |  [Screen Shots](#shots) | [Testing](#testing)
+***
 
-<h2><a name="task"> Task </a></h2>
+
+
+<a name="task"> Task </a>
+
+
 To create web-based dating app that allows users to
 express themselves through memes. The app requires users to be able to upload memes to their profile, from an existing memes library. Users should also be able to chat to each other in realtime.
 
 The app should be created with strong TDD principles throughout. We will also be adhering to XP (extreme programming) methodology, and framing our progress in terms of XP values.
 
 
-<h2><a name="technologies"> Technologies </a></h2>
+<h2><a name="#technologies"> Technologies </a></h2>
 <ul>
   <li> Rails 5.0.2 </li>
   <li> RSpec </li>
@@ -37,7 +42,7 @@ The app should be created with strong TDD principles throughout. We will also be
 </ul>
 
 
-<h2><a name="languages"> Languages </a></h2>
+<h2><a name="#languages"> Languages </a></h2>
 <ul>
   <li>Ruby </li>
   <li>JavaScript</li>
@@ -46,7 +51,7 @@ The app should be created with strong TDD principles throughout. We will also be
   <li>CSS</li>
 </ul>
 
-<h2><a name="stories"> User Stories </a></h2>
+<h2><a name="#stories"> User Stories </a></h2>
 
 ```
 As a visitor
@@ -86,7 +91,7 @@ Because I have a low patience threshold
 I should receive new messages in realtime
 ```
 
-<h2><a name="walkthrough"> Walkthrough </a></h2>
+<h2><a name="#walkthrough"> Walkthrough </a></h2>
 
 1. Visit <a href="http://bemymeme.herokuapp.com">http://bemymeme.herokuapp.com</a>
 2. Click 'Sign up'
