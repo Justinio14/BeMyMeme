@@ -32,5 +32,6 @@ feature 'Memes updates'
       expect(page).to have_content('Meme was saved.')
       expect(current_path).to eq "/users/#{User.first.id}"
     end
+  end
 
 end
