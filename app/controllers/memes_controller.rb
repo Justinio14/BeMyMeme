@@ -27,7 +27,4 @@ class MemesController < ApplicationController
   def meme_params
     params.require(:memes).permit(:id)
   end
-
-
-
 end
