@@ -4,14 +4,12 @@
 
 <h2> Team Members </h2>
 <ul>
-  <li>
-  <a href="https://github.com/thesedatedprince">Matt Perry</a>
-  <a href="https://github.com/gbhachu">Gurminder Bhachu</a>
-  <a href="https://github.com/olwend">Olwen Davies</a>
-  <a href="https://github.com/Justinio14">Justin Butwell</a>
-  <a href="https://github.com/herecomesjaycee">Jaycee Cheong</a>
-  <a href="https://github.com/BasileKoko">Basile Koko</a>
-  </li>
+  <li><a href="https://github.com/thesedatedprince">Matt Perry</a></li>
+  <li><a href="https://github.com/gbhachu">Gurminder Bhachu</a></li>
+  <li><a href="https://github.com/olwend">Olwen Davies</a></li>
+  <li><a href="https://github.com/Justinio14">Justin Butwell</a></li>
+  <li><a href="https://github.com/herecomesjaycee">Jaycee Cheong</a></li>
+  <li><a href="https://github.com/BasileKoko">Basile Koko</a></li>
 <ul>
 
 This README would normally document whatever steps are necessary to get the
