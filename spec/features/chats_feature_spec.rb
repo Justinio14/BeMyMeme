@@ -19,10 +19,11 @@ feature 'chats' do
       # expect(Chat.count).to change_by(1)
       end
 
-    xit 'sends a message from sender to recipient', js:true do
-      fill_in 'message', :with => 'hello hello'
+    it 'sends a message from sender to recipient', js:true do
+      click_link('test1')
+      # fill_in 'message', :with => 'hello hello'
       click_button('Send')
-      expect(Message.count).to change_by(1)
+      expect(Message.count).to eq(1)
     end
     xit 'sends a response from recipient to sender', js:true do
     end
