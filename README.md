@@ -100,11 +100,11 @@ I should receive new messages in realtime
 2. Click 'Sign up'
   ![Sign Up](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.37.58.png)
 3. Fill out the form - remember to upload a profile pic!
-  ----SCREENSHOT!!!---
+  ![Form](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.43.49.png)
 4. Visit 'My Profile'
-  ---SCREENSHOT!!!---
+  ![Profile](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.47.53.png)
 5. Click 'Add memes' - choose memes that express you from a gallery of memes!
-  ---SCREENSHOT!!!---
+  ![Memes](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.49.10.png)
 6. Click "LINK??!?!??!!" to view all other users.
   ---SCREENSHOT!!!---
 7. Click on a user's profile to see their info.
