@@ -1,46 +1,36 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-<title>Be My Meme</title>
-</head>
-<body>
-<div class="wrap">
-   <div class="section group example">
-      <div class="profile-text">
-      <div class="username"><h2><%= @user.username %></h2></div><br/>
-      <div class="profile-image">
-      <%= image_tag @user.image.url(:medium) %>
+  <section class="section-padding">
+  <div class="container">
+      <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+      <%= image_tag @user.image.url(:medium), :class=>"user-image" %>
       </div>
-    <h4>About Me</h4>
-    <p><%= @user.bio %></p>
-    <p><%= @user.gender%></p>
+    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+      <div class="username"><h2><%= @user.username %></h2></div>
+        <h5>Bio: <%= @user.bio %></h5>
+        <h5>Gender: <%= @user.gender%></h5>
+        <h5>Interested in: <%= @user.interested_in%></h5>
     </div>
-
-
     </div>
-    </div>
+    </section>
 
 
-    <section>
+    <section class="meme-gallery">
     <div class="profile-text">
-   <h5> Me in Memes
-   <% if current_user == @user %>
-   <button class="btn btn-primary">
-   <%= link_to 'Add Memes', meme_gallery_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'}  %>
-   </button>
-   <% end %></h5>
-        <div class="user-meme-container">
+   <h2><span class="white-text">Me in Memes</span></h2>
+     <% if current_user == @user %>
+     <h5><%=link_to 'Add Memes +', meme_gallery_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'} %></h5>
+     <% end %>
+     <div class="row">
         <%@memes.each do |meme| %> 
-        <div class="col-xs-6 col-sm-4">
-          <%=image_tag meme.name, :style=>"height: 200px; width: 200px; border-radius: 10px; border: 2px solid black;"%> <br>
-          <%if current_user == @user %>
-          <%=link_to 'Delete meme x'%>
+        <div class="col-lg-15 col-md-15 col-xs-15 meme-gallery">
+          <%=image_tag meme.name, :class=>"meme-image"%> 
+            <%if current_user == @user %>
+            <p><%=link_to 'Delete meme x'%></p>
+            <% end %>
           </div>
-          <% end %>
         <% end %>
-        </div>      
-    </div>
+        </div>
+      </div>
+
   </section>
 
   <section>
@@ -51,7 +41,16 @@
   </div>
   </section>
 
-</body>
+<section style="padding: 20px;">
+    <% if current_user == @user %>
+    <div class="col-sm-6">
+   <%= link_to 'Delete Account', user_path, :class=> "btn btn-danger left-float", method: :delete %>
+   </div>
+   <div class="col-sm-6">
+   <%= link_to 'Edit Account', edit_user_path, :class=> "btn btn-success right-float"%>
+    </div>
+   <% end %>
+</section>
 
 <div id="modal-window" class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -59,18 +58,3 @@
   </div>
 </div>
 
-<section style="padding: 20px;">
-    <% if current_user == @user %>
-    <div class="col-sm-6">
-   <%= link_to 'Delete Account', user_path, :class=> "btn btn-danger", method: :delete,  :style=>"float:left; margin: 50px;" %>
-   </div>
-   <div class="col-sm-6">
-   <%= link_to 'Edit Account', edit_user_path, :class=> "btn btn-success", :style=>"float: right; margin: 50px;" %>
-    </div>
-   <% end %>
-   <div style="padding: 20px;">
-   </div>
-</section>
-
-
-</html>

@@ -17,6 +17,70 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.jumbotron {
+  background-image: url("http://assets.vr-zone.net/19654/the-internet.jpg");
+}
+
+.white-text{
+  color: white;
+}
+
+.section-padding{
+  padding: 30px;
+}
+
+
+.meme-image{
+  height: 240px; 
+  width: 240px; 
+  border-radius: 20px; 
+  padding: 2px; 
+  margin: 20px
+}
+
+.user-image{
+  border-radius: 1%;
+  box-shadow: 3px 3px 1px #888888;
+}
+
+.user-profile-image{
+  height: 300px; 
+  width: 300px; 
+  padding: 16px;
+}
+
+.left-float{
+  float: left;
+  margin: 50px;
+}
+
+.right-float{
+  float: right;
+  margin: 50px;
+}
+
+ .notice{
+  font-size: 12px;
+  color: white;
+  padding: 100px;
+ }
+
+.black-white-text{
+ background-color: black; 
+ color: white;
+ padding: 0.1em;
+}
+
+
+#user_image{
+  background-color: #5bc0de;
+  color: white;
+}
+
+.dark-grey-text{
+  color: #191919;
+}
+
 ul {   
   padding-left: 0px;
   list-style: none;
@@ -71,9 +135,72 @@ ul {
 
 .user-meme-container{
   width: 100%;
+  line-height: 460px;
 }
 
 .user-meme{
   float: left;
-  width: 19.5%;
+  width: 15%;
+}
+
+.meme-gallery{
+  background-color: #222222;
+}
+
+.meme-gallery-image{
+  height: 300px; 
+  height: 300px; 
+  padding: 20px;
+}
+
+.meme-gallery-container{
+  background-color: #F9F3EB; 
+  width:inherit;
+}
+
+.modal-header-text{
+  text-decoration: underline;
+}
+
+.panel-heading{
+  background-color: #222222 !important;
+  border-color: #222222 !important;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width:320px) {
+col-xs-15 {
+    width: 100%;
+    float: left;
+    }
+}
+
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 19%;
+        float: left;
+    }
 }
