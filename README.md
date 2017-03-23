@@ -98,7 +98,7 @@ I should receive new messages in realtime
 
 1. Visit <a href="http://bemymeme.herokuapp.com">http://bemymeme.herokuapp.com</a>
 2. Click 'Sign up'
-  ----SCREENSHOT!!!---
+  [Sign Up!](public/README_images/Screen Shot 2017-03-23 at 10.37.58.png)----SCREENSHOT!!!---
 3. Fill out the form - remember to upload a profile pic!
   ----SCREENSHOT!!!---
 4. Visit 'My Profile'
