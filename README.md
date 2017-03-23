@@ -125,7 +125,7 @@ I should receive new messages in realtime
 
 <a name="testing"> Testing </a>
 
-![Test Coverage](https://github.com/Justinio14/BeMyMeme/blob/master/coverage/index.html)
+![Test Coverage](public/README_images/Screen Shot 2017-03-23 at 12.22.34.png)
 A TDD approach was taken.  There were challenges to testing Chat across 2 clients and in the absence of an action cable test framework; this is reflected in the stats.
 
 
