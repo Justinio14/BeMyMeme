@@ -18,6 +18,10 @@
   background-image: url("http://assets.vr-zone.net/19654/the-internet.jpg");
 }
 
+.white-text{
+  color: white;
+}
+
 .section-padding{
   padding: 30px;
 }
@@ -43,6 +47,7 @@
 .black-white-text{
  background-color: black; 
  color: white;
+ padding: 0.1em;
 }
 
 @import "bootstrap-sprockets";
@@ -120,7 +125,7 @@ ul {
 }
 
 .meme-gallery{
-  background-color: #C1D4F7;
+  background-color: #222222;
 }
 
 .panel-heading{

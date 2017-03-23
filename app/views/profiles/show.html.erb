@@ -15,16 +15,16 @@
 
     <section class="meme-gallery">
     <div class="profile-text">
-   <h4><span class="dark-grey-text">Me in Memes</span></h4>
+   <h2><span class="white-text">Me in Memes</span></h2>
      <% if current_user == @user %>
-     <h5><%=link_to 'Add Memes', meme_gallery_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'} %></h5>
+     <h5><%=link_to 'Add Memes +', meme_gallery_path, {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window'} %></h5>
      <% end %>
      <div class="row">
         <%@memes.each do |meme| %> 
         <div class="col-md-15 col-xs-3 meme-gallery">
           <%=image_tag meme.name, :style=>"height: 240px; width: 240px; border-radius: 20px; padding: 2px; margin: 20px 120px"%> 
             <%if current_user == @user %>
-            <p><%=link_to 'Delete meme x' %></p>
+            <p><%=link_to 'Delete meme x'%></p>
             <% end %>
           </div>
         <% end %>
