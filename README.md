@@ -108,7 +108,8 @@ I should receive new messages in realtime
 7. Click on a user's profile to see their info.
 8. Click 'Lets Talk' to start up a conversation
 9. Select the user you wish to chat with.
-10. You can now send and receive messages in realtime!!! Instructional video
+10. You can now send and receive messages in realtime!!!
+          <h3>Instructional video</h3>
 ![Video Demo](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Bemymeme_Demo.gif)
 
 ***
