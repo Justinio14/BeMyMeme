@@ -20,11 +20,11 @@ feature 'chats' do
       # expect(Chat.count).to change_by(1)
       end
 
-    it 'sends a message from sender to recipient', js:true do
+    xit 'sends a message from sender to recipient', js:true do
       click_link('test1')
-      # fill_in 'message', :with => 'hello hello'
+      fill_in 'message', :with => 'hello hello'
       click_button('Send')
-      expect(Message.count).to eq(1)
+      expect(Message.count).to change_by(1)
 
       click_link('test2')
       expect(find'.panel-heading').to have_text('test2')
