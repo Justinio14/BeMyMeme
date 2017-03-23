@@ -102,19 +102,16 @@ I should receive new messages in realtime
 3. Fill out the form - remember to upload a profile pic!
   ![Form](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.43.49.png)
 4. Visit 'My Profile'
-  ![Profile](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.47.53.png)
 5. Click 'Add memes' - choose memes that express you from a gallery of memes!
   ![Memes](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.49.10.png)
 6. Click "BeMyMeme" to view all other users.
-  ---SCREENSHOT!!!---
 7. Click on a user's profile to see their info.
-  ---SCREENSHOT!!!---
 8. Click 'Lets Talk' to start up a conversation
-  ---SCREENSHOT!!!----
 9. Select the user you wish to chat with.
-  ---SCREENSHOT!!!----
-10. You can now send and receive messages in realtime!!!
-  ![Chat](https://cdn.nopio.com/blog/wp-content/uploads/2016/11/message-2.gif?iv=176)
+10. You can now send and receive messages in realtime!!! Instructional video
+```
+  ![Chat](https://www.youtube.com/watch?v=EN6dmwtb-_4&feature=youtu.be)
+```
 ***
 
 <a name="installation"> Installation </a>
@@ -128,5 +125,8 @@ I should receive new messages in realtime
 
 <a name="testing"> Testing </a>
 
-![Test Coverage](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2012.22.34.png)
+![Test Coverage](https://github.com/Justinio14/BeMyMeme/blob/master/coverage/index.html)
 A TDD approach was taken.  There were challenges to testing Chat across 2 clients and in the absence of an action cable test framework; this is reflected in the stats.
+
+
+---SCREENSHOTS---
