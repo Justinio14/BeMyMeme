@@ -105,16 +105,16 @@ I should receive new messages in realtime
   ![Profile](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.47.53.png)
 5. Click 'Add memes' - choose memes that express you from a gallery of memes!
   ![Memes](https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.49.10.png)
-6. Click "LINK??!?!??!!" to view all other users.
+6. Click "BeMyMeme" to view all other users.
   ---SCREENSHOT!!!---
 7. Click on a user's profile to see their info.
   ---SCREENSHOT!!!---
-8. Click 'Chat' to start up a conversation
+8. Click 'Lets Talk' to start up a conversation
   ---SCREENSHOT!!!----
 9. Select the user you wish to chat with.
   ---SCREENSHOT!!!----
 10. You can now send and receive messages in realtime!!!
-  ---SCREENSHOT!!!----
+  ![Chat](https://cdn.nopio.com/blog/wp-content/uploads/2016/11/message-2.gif?iv=176)
 ***
 
 <a name="installation"> Installation </a>
