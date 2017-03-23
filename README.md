@@ -98,7 +98,7 @@ I should receive new messages in realtime
 
 1. Visit <a href="http://bemymeme.herokuapp.com">http://bemymeme.herokuapp.com</a>
 2. Click 'Sign up'
-  [Sign Up!](public/README_images/Screen Shot 2017-03-23 at 10.37.58.png)----SCREENSHOT!!!---
+  (https://github.com/Justinio14/BeMyMeme/blob/18-README/public/README_images/Screen%20Shot%202017-03-23%20at%2010.37.58.png)
 3. Fill out the form - remember to upload a profile pic!
   ----SCREENSHOT!!!---
 4. Visit 'My Profile'
@@ -129,7 +129,7 @@ I should receive new messages in realtime
 <a name="testing"> Testing </a>
 
 [Test Coverage](https://github.com/Justinio14/BeMyMeme/blob/master/coverage/index.html)
-A TDD approach was taken.  There were challenges to testing Chat across 2 clients and in the absence of an action cable test framework; this is reflected in the stats. 
+A TDD approach was taken.  There were challenges to testing Chat across 2 clients and in the absence of an action cable test framework; this is reflected in the stats.
 
 
 ---SCREENSHOTS---
