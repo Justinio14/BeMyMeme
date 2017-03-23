@@ -13,17 +13,18 @@ feature 'chats' do
       expect(page).to have_content('User list')
     end
 
-    it 'allows user to open a chat with recipient', js:true do
+    xit 'allows user to open a chat with recipient', js:true do
       click_link('test1')
       expect(find'.panel-heading').to have_text('test1')
-      # expect(Chat.count).to change_by(1)
       end
 
     xit 'sends a message from sender to recipient', js:true do
       fill_in 'message', :with => 'hello hello'
+      expect(find'.panel-body').to have_text
       click_button('Send')
-      expect(Message.count).to change_by(1)
+      expect(find'.row').to have_text('hello hello')
     end
+
     xit 'sends a response from recipient to sender', js:true do
     end
 

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/controllers/chats_controller_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/controllers/chats_controller_spec.rb": [
         1,
         null,
         1,
@@ -31,7 +31,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/rails_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -106,14 +106,14 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/environment.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/application.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/application.rb": [
         1,
         null,
         1,
@@ -145,12 +145,12 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/boot.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/spring.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/spring.rb": [
         null,
         null,
         null,
@@ -158,7 +158,7 @@
         null,
         5
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/environments/test.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/environments/test.rb": [
         1,
         null,
         null,
@@ -202,7 +202,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/application_controller_renderer.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -210,7 +210,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/assets.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -223,7 +223,7 @@
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/backtrace_silencers.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -232,14 +232,14 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/cookies_serializer.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/devise.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -498,30 +498,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/filter_parameter_logging.rb": [
-        null,
-        null,
-        null,
-        1
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -539,13 +515,37 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/mime_types.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/new_framework_defaults.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/new_framework_defaults.rb": [
         null,
         null,
         null,
@@ -571,15 +571,15 @@
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/redis.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/redis.rb": [
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/session_store.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/initializers/wrap_parameters.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -595,197 +595,109 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/api_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/api_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/application_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/chats_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/chats_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/home_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/memes_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/memes_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/messages_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/messages_helper.rb": [
         1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/profiles_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/factories.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/config/routes.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/user.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/profiles_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/application_record.rb": [
-        1,
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/support/database_cleaner.rb": [
-        1,
-        null,
-        1,
-        1,
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/factories.rb": [
         null,
         null,
-        1,
-        33,
         null,
         null,
-        1,
-        1,
         null,
         null,
-        1,
-        33,
         null,
         null,
-        1,
-        33,
         null,
         null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/support/factory_girl.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -800,22 +712,110 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/chats_controller.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/config/routes.rb": [
         1,
-        null,
         1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null,
         null,
         1,
         1,
         1,
         1,
         1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/support/database_cleaner.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        32,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        32,
+        null,
+        null,
+        1,
+        32,
+        null,
+        null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/support/factory_girl.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/chats_controller.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
@@ -832,16 +832,16 @@
         1,
         null,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         1,
-        1,
+        0,
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/application_controller.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -849,7 +849,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/controllers/meme_controller_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/controllers/meme_controller_spec.rb": [
         1,
         null,
         1,
@@ -873,7 +873,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/memes_controller.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/memes_controller.rb": [
         1,
         null,
         1,
@@ -905,32 +905,33 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/chats_feature_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/chats_feature_spec.rb": [
         1,
         1,
         null,
         1,
         1,
         1,
-        2,
-        2,
-        2,
-        null,
-        null,
+        1,
         1,
         1,
         null,
         null,
         1,
         1,
-        1,
         null,
+        null,
+        1,
+        0,
+        0,
         null,
         null,
         1,
         0,
         0,
         0,
+        0,
+        null,
         null,
         1,
         null,
@@ -947,20 +948,20 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/web_helper.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/web_helper.rb": [
         1,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
         null,
         null,
         1,
-        10,
+        9,
         null,
         null,
         1,
@@ -975,7 +976,7 @@
         6,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/home_feature_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/home_feature_spec.rb": [
         1,
         null,
         1,
@@ -987,7 +988,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/meme_feature_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/meme_feature_spec.rb": [
         1,
         null,
         1,
@@ -1027,7 +1028,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/profiles_feature_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/profiles_feature_spec.rb": [
         1,
         null,
         1,
@@ -1104,7 +1105,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/features/user_feature_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/features/user_feature_spec.rb": [
         1,
         null,
         1,
@@ -1122,7 +1123,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/models/api_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/models/api_spec.rb": [
         1,
         null,
         1,
@@ -1135,7 +1136,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/api.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/api.rb": [
         1,
         1,
         1,
@@ -1160,58 +1161,19 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/models/block_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/models/block_spec.rb": [
         1,
         null,
         1,
         2,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/block.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/block.rb": [
         1,
         1,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/models/chat_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/chat.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/models/meme_spec.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/models/chat_spec.rb": [
         1,
         null,
         1,
@@ -1220,60 +1182,21 @@
         2,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/meme.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/chat.rb": [
         1,
         1,
         1,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/spec/models/user_spec.rb": [
-        1,
-        null,
-        1,
-        2,
-        2,
-        2,
-        null,
-        null,
-        2,
-        null,
-        2,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/home_controller.rb": [
         1,
         null,
         1,
         null,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/registrations_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        10,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/channels/application_cable/connection.rb": [
-        1,
-        1,
         1,
         null,
         1,
         0,
         null,
         null,
-        1,
+        null,
         null,
         1,
         0,
@@ -1283,18 +1206,66 @@
         null,
         null,
         null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/models/message.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/models/meme_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/meme.rb": [
         1,
         1,
         1,
         null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/spec/models/user_spec.rb": [
         1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        2,
+        null,
+        2,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/home_controller.rb": [
+        1,
+        null,
+        1,
+        null,
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/profiles_controller.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/registrations_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        9,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/profiles_controller.rb": [
         1,
         null,
         1,
@@ -1318,7 +1289,7 @@
         null,
         null
       ],
-      "/Users/macbookpro/Makers/wk11/BeMyMeme/be_my_meme/app/controllers/users_controller.rb": [
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -1348,8 +1319,17 @@
         1,
         null,
         null
+      ],
+      "/Users/DOE/Projects/Makers_Course/week11/BeMyMeme/app/models/message.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1490189999
+    "timestamp": 1490280362
   }
 }
