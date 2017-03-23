@@ -2,8 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a{
-  background-color: black;
+a:link{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:active{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:clicked{
   color: white;
   padding: 10px;
   text-decoration: none;
