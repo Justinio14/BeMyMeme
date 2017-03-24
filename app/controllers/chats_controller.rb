@@ -10,9 +10,7 @@ before_action :authenticate_user!
 
   def create
    @chat = Chat.get(current_user.id, params[:user_id])
-   p @chat
    add_to_chats unless chatted?
-   p @chat
    respond_to do |format|
     format.js
    end
