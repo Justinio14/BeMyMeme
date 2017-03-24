@@ -13,12 +13,6 @@ feature 'chats' do
       expect(page).to have_content('User list')
     end
 
-    it 'shows user list available to chat' do
-      sign_up_DD
-      visit ('/chats')
-      expect(page).to have_content('User list test1')
-      end
-
     it 'correct number of users in chat list', js:true do
       visit ('/chats')
       expect(find('ul')).to have_selector('li', count: 2)
