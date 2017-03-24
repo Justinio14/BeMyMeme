@@ -16,8 +16,14 @@ RSpec.describe MemesController, type: :controller do
       user = User.create! :email => "add@meme.com", :password => 'topsecret', :password_confirmation => 'topsecret', :username => 'testaddmeme', :bio => 'great tester', :gender => 'not sure', :postcode => 'NG9 3GW', :location => 'Bramcote', :interested_in => 'female'
       Meme.create! :id => 0, :name => 'i.imgur.com/5ffdafadsfd', :tag => "yay"
       sign_in user
-
       expect{subject}.to change{user.memes.count}
+    end
+  end
+
+  describe "GET #index" do
+    subject {get :index}
+    it 'will not error' do
+      expect(response).to have_http_status(:ok)
     end
   end
 end
