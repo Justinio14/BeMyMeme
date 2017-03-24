@@ -45,7 +45,7 @@ feature 'profiles' do
       click_link('My Profile')
       click_link('Edit', match: :first)
       fill_in('user_bio', with: 'Better looking than Elvis')
-      click_button('Update User')
+      click_button('Update profile')
       expect(page).to have_content('Better looking than Elvis')
   end
 
