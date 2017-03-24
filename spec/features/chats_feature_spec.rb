@@ -44,3 +44,4 @@ feature 'chats' do
     xit 'can close a chat', js:true do
     end
   end
+end
