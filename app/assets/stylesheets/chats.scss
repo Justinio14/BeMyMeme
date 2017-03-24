@@ -13,3 +13,21 @@
   padding: 8px 16px !important;
   margin: 4px !important;
 }
+
+.toggle-window{
+  background-color: #222222;
+  padding: 10px;
+  text-decoration: none !important;
+  color: white;
+}
+
+.toggle-window :active{
+  background-color: #222222;
+  padding: 10px;
+  text-decoration: underline !important;
+  color: white;
+}
+
+.panel-primary {
+    border-color: #222222 !important;
+}

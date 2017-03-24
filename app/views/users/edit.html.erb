@@ -1,13 +1,27 @@
+<div class="container">
 <h3>Edit your profile:</h3><br><br>
-<%= form_for  @user do |f| %>
 
-<%= f.label :bio %>
-<%= f.text_area :bio %><br><br>
-<%= f.label :location %>
-<%= f.text_field :location %><br><br>
-<%= f.label :postcode %>
-<%= f.text_field :postcode %><br><br>
-<%= f.label :interested_in %>
-<%= f.text_field :interested_in %><br><br>
-<%= f.submit %>
+<%= form_for  @user do |f| %>
+  <div class="form-group">
+    <%= f.label :bio %>
+    <%= f.text_area :bio, :class=>"form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :location %>
+    <%= f.text_field :location, :class=>"form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :postcode %>
+    <%= f.text_field :postcode, :class=>"form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :interested_in %>
+    <%= f.text_field :interested_in, :class=>"form-control"%>
+  </div>
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <%= f.submit 'Update profile', :class=>"btn btn-success" %>
+  </div>
 <% end %>

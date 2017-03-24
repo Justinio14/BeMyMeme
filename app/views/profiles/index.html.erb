@@ -1,16 +1,19 @@
 <div class="container">
   <div class="row">
    <div class="col-lg-12">
-   <h1 class="page-header">People</h1>
+   <h1 class="page-header">Profiles</h1>
    </div>
     <% if user_signed_in? %>
       <% @user.each do |user| %>
         <% unless user.id == current_user.id %>
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <%=link_to image_tag(user.image.url, :style=>"height: 300px; width: 300px; padding: 16px;"), profile_path(user)%>
-            <%=user.username%>
-            <%= user.gender%>
-            <%=link_to "View profile", profile_path(user)%>
+          <div class="col-lg-3 col-md-4 col-xs-12">
+            <%=link_to image_tag(user.image.url, :class=>"user-profile-image"), profile_path(user)%>
+            <div class="profile-text">
+            <h4><%=user.username%></h4>
+            <p>Gender: <%= user.gender%></p>
+            <p>Interested In: <%= user.interested_in%></p>
+            <p><%=link_to "View profile", profile_path(user)%></p>
+            </div>
           </div>
         <% end %>
       <% end %>

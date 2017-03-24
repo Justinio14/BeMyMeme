@@ -1,7 +1,8 @@
-<h3 id="myModalLabel">Meme Gallery</h3> 
+<div class="container" class="meme-gallery-container">
+<h3 id="myModalLabel" class="modal-header-text">Meme Gallery</h3> 
 <%@memes.each do |meme| %> 
 <div>
-<%=image_tag meme.name, :style=>"height: 300px; height: 300px; padding: 20px;"%>
+<%=image_tag meme.name, :class=>"meme-gallery-image"%>
 <form action='/add' method='post' target='dummyframe'> 
   <input  type='text' style='display:none' name="id" value="<%=meme.id%>"> 
   <input type='submit' value='Save'> 
@@ -9,3 +10,4 @@
 </div>
   <br> 
 <%end%>
+</div>

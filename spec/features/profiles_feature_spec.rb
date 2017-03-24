@@ -1,4 +1,5 @@
 require 'rails_helper'
+require_relative 'web_helper'
 
 feature 'profiles' do
   context 'profile list page' do
