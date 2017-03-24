@@ -19,4 +19,11 @@ RSpec.describe MemesController, type: :controller do
       expect{subject}.to change{user.memes.count}
     end
   end
+
+  describe "GET #index" do
+    subject {get :index}
+    it 'will not error' do
+      expect(response).to have_http_status(:ok)
+    end
+  end
 end

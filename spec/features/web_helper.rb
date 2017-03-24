@@ -8,7 +8,9 @@ def sign_up
   fill_in('Dob', with: '24/01/1994')
   click_button('Sign up')
 end
-
+def user
+  user = User.create! :email => "add@meme.com", :password => 'topsecret', :password_confirmation => 'topsecret', :username => 'testaddmeme', :bio => 'great tester', :gender => 'not sure', :postcode => 'NG9 3GW', :location => 'Bramcote', :interested_in => 'male'
+end
 def test_1_user
   user2 = User.create! :email => "bb@cc.com", :password => 'topsecret', :password_confirmation => 'topsecret', :username => 'test1', :bio => 'great tester1', :gender => 'male', :postcode => 'NG10 3GW', :location => 'Kimberley', :interested_in => 'female'
 end

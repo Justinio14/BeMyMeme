@@ -15,14 +15,13 @@ RSpec.describe ChatsController, type: :controller do
 
   describe "POST #create chat session" do
     subject {post :create}
-     xit 'starts a chat with chosen recipient' do
-
-    end
+    it 'creates a chat' do
   end
+end
 
   describe "GET #close chat session" do
     subject {get :close}
-     xit 'closes a chat with chosen recipient' do
+     it 'closes a chat with chosen recipient' do
     end
   end
 end

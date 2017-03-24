@@ -21,4 +21,4 @@ Gemfile.lock
 Gemfile.lock
 
 # Ignore coverage/assets
-/coverage/assets
+coverage/assets

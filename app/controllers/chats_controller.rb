@@ -10,7 +10,9 @@ before_action :authenticate_user!
 
   def create
    @chat = Chat.get(current_user.id, params[:user_id])
+   p @chat
    add_to_chats unless chatted?
+   p @chat
    respond_to do |format|
     format.js
    end
@@ -26,14 +28,13 @@ before_action :authenticate_user!
     end
   end
 
- private
-
+private
  def add_to_chats
    session[:chats] ||= []
    session[:chats] << @chat.id
  end
 
  def chatted?
-  session[:chats].include?(@chat.id) 
+  session[:chats].include?(@chat.id)
  end
 end
